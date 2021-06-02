@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\C_shape_Web",
-    "\\C_shape_Web\\Scripts\\WebForms"
+    "\\C_shape_Web"
   ],
-  "SelectedNode": "\\C_shape_Web.sln",
+  "SelectedNode": "\\C_shape_Web\\Default.aspx",
   "PreviewInSolutionExplorer": false
 }
