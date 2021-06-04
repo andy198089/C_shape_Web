@@ -105,10 +105,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="about.html" />
     <Content Include="blog.html" />
-    <Content Include="Contact.aspx" />
     <Content Include="contact.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -126,7 +124,6 @@
     <Content Include="css\responsive.css" />
     <Content Include="css\slick.css" />
     <Content Include="css\style.css" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -138,6 +135,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Home.aspx" />
     <Content Include="index.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="icon\1.png" />
@@ -178,7 +176,194 @@
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Product.aspx" />
     <Content Include="product.html" />
+    <Content Include="product_pic\C333_1.jpg" />
+    <Content Include="product_pic\C333_2.jpg" />
+    <Content Include="product_pic\F666_1.jpg" />
+    <Content Include="product_pic\F666_2.jpg" />
+    <Content Include="product_pic\L1082_1.jpg" />
+    <Content Include="product_pic\L1082_2.jpg" />
+    <Content Include="product_pic\L1086_1.jpg" />
+    <Content Include="product_pic\L1086_2.jpg" />
+    <Content Include="product_pic\L3330_1.jpg" />
+    <Content Include="product_pic\L3330_2.jpg" />
+    <Content Include="product_pic\L3331_1.jpg" />
+    <Content Include="product_pic\L3331_2.jpg" />
+    <Content Include="product_pic\L3350_1.jpg" />
+    <Content Include="product_pic\L3350_2.jpg" />
+    <Content Include="product_pic\L3360_1.jpg" />
+    <Content Include="product_pic\L3360_2.jpg" />
+    <Content Include="product_pic\L3370_1.jpg" />
+    <Content Include="product_pic\L3370_2.jpg" />
+    <Content Include="product_pic\L3380_1.jpg" />
+    <Content Include="product_pic\L3380_2.jpg" />
+    <Content Include="product_pic\L8001AA_1.jpg" />
+    <Content Include="product_pic\L8001AA_2.jpg" />
+    <Content Include="product_pic\L8002BC_1.jpg" />
+    <Content Include="product_pic\L8002BC_2.jpg" />
+    <Content Include="product_pic\L8003BB_1.jpg" />
+    <Content Include="product_pic\L8003BB_2.jpg" />
+    <Content Include="product_pic\L8010CBB_1.jpg" />
+    <Content Include="product_pic\L8010CBB_2.jpg" />
+    <Content Include="product_pic\L8011DBB_1.jpg" />
+    <Content Include="product_pic\L8011DBB_2.jpg" />
+    <Content Include="product_pic\L8012EBB_1.jpg" />
+    <Content Include="product_pic\L8012EBB_2.jpg" />
+    <Content Include="product_pic\LA-1060_1.jpg" />
+    <Content Include="product_pic\LA-1060_2.jpg" />
+    <Content Include="product_pic\LA-1064_1.jpg" />
+    <Content Include="product_pic\LA-1064_2.jpg" />
+    <Content Include="product_pic\LA-1439_1.jpg" />
+    <Content Include="product_pic\LA-1439_2.jpg" />
+    <Content Include="product_pic\LA-1442_1.jpg" />
+    <Content Include="product_pic\LA-1442_2.jpg" />
+    <Content Include="product_pic\LA-1445_1.jpg" />
+    <Content Include="product_pic\LA-1445_2.jpg" />
+    <Content Include="product_pic\LA-1447_1.jpg" />
+    <Content Include="product_pic\LA-1447_2.jpg" />
+    <Content Include="product_pic\LA-1450_1.jpg" />
+    <Content Include="product_pic\LA-1450_2.jpg" />
+    <Content Include="product_pic\LA-147_1.jpg" />
+    <Content Include="product_pic\LA-147_2.jpg" />
+    <Content Include="product_pic\LA-1485_1.jpg" />
+    <Content Include="product_pic\LA-1485_2.jpg" />
+    <Content Include="product_pic\LA-1489_1.jpg" />
+    <Content Include="product_pic\LA-1489_2.jpg" />
+    <Content Include="product_pic\LA-1491_1.jpg" />
+    <Content Include="product_pic\LA-1491_2.jpg" />
+    <Content Include="product_pic\LA-1492_1.jpg" />
+    <Content Include="product_pic\LA-1492_2.jpg" />
+    <Content Include="product_pic\LA-1493_1.jpg" />
+    <Content Include="product_pic\LA-1493_2.jpg" />
+    <Content Include="product_pic\LA-1494_1.jpg" />
+    <Content Include="product_pic\LA-1494_2.jpg" />
+    <Content Include="product_pic\LA-1495_1.jpg" />
+    <Content Include="product_pic\LA-1495_2.jpg" />
+    <Content Include="product_pic\LA-1496_1.jpg" />
+    <Content Include="product_pic\LA-1496_2.jpg" />
+    <Content Include="product_pic\LA-1497_1.jpg" />
+    <Content Include="product_pic\LA-1497_2.jpg" />
+    <Content Include="product_pic\LA-1789_1.jpg" />
+    <Content Include="product_pic\LA-1789_2.jpg" />
+    <Content Include="product_pic\LA-1834_1.jpg" />
+    <Content Include="product_pic\LA-1834_2.jpg" />
+    <Content Include="product_pic\LA-1836_1.jpg" />
+    <Content Include="product_pic\LA-1836_2.jpg" />
+    <Content Include="product_pic\LA-1837_1.jpg" />
+    <Content Include="product_pic\LA-1837_2.jpg" />
+    <Content Include="product_pic\LA-1838_1.jpg" />
+    <Content Include="product_pic\LA-1838_2.jpg" />
+    <Content Include="product_pic\LA-1839_1.jpg" />
+    <Content Include="product_pic\LA-1839_2.jpg" />
+    <Content Include="product_pic\LA-1840_1.jpg" />
+    <Content Include="product_pic\LA-1840_2.jpg" />
+    <Content Include="product_pic\LA-1841_1.jpg" />
+    <Content Include="product_pic\LA-1841_2.jpg" />
+    <Content Include="product_pic\LA-1842_1.jpg" />
+    <Content Include="product_pic\LA-1842_2.jpg" />
+    <Content Include="product_pic\LA-1843_1.jpg" />
+    <Content Include="product_pic\LA-1843_2.jpg" />
+    <Content Include="product_pic\LA-1845_1.jpg" />
+    <Content Include="product_pic\LA-1845_2.jpg" />
+    <Content Include="product_pic\LA-1846_1.jpg" />
+    <Content Include="product_pic\LA-1846_2.jpg" />
+    <Content Include="product_pic\LA-1847_1.jpg" />
+    <Content Include="product_pic\LA-1847_2.jpg" />
+    <Content Include="product_pic\LA-320_1.jpg" />
+    <Content Include="product_pic\LA-320_2.jpg" />
+    <Content Include="product_pic\LA-333_1.jpg" />
+    <Content Include="product_pic\LA-333_2.jpg" />
+    <Content Include="product_pic\LA-580A_1.jpg" />
+    <Content Include="product_pic\LA-580A_2.jpg" />
+    <Content Include="product_pic\LA-581A_1.jpg" />
+    <Content Include="product_pic\LA-581A_2.jpg" />
+    <Content Include="product_pic\LA-5830_1.jpg" />
+    <Content Include="product_pic\LA-5830_2.jpg" />
+    <Content Include="product_pic\LA-583A_1.jpg" />
+    <Content Include="product_pic\LA-583A_2.jpg" />
+    <Content Include="product_pic\LA-585A_1.jpg" />
+    <Content Include="product_pic\LA-585A_2.jpg" />
+    <Content Include="product_pic\LA-586A_1.jpg" />
+    <Content Include="product_pic\LA-586A_2.jpg" />
+    <Content Include="product_pic\LA-587A_1.jpg" />
+    <Content Include="product_pic\LA-587A_2.jpg" />
+    <Content Include="product_pic\LA-588A_1.jpg" />
+    <Content Include="product_pic\LA-588A_2.jpg" />
+    <Content Include="product_pic\LA-6030B_1.jpg" />
+    <Content Include="product_pic\LA-6030B_2.jpg" />
+    <Content Include="product_pic\LA-6030C_1.jpg" />
+    <Content Include="product_pic\LA-6030C_2.jpg" />
+    <Content Include="product_pic\LA-6030W_1.jpg" />
+    <Content Include="product_pic\LA-6030W_2.jpg" />
+    <Content Include="product_pic\LA-6032A_1.jpg" />
+    <Content Include="product_pic\LA-6032A_2.jpg" />
+    <Content Include="product_pic\LA-6400_1.jpg" />
+    <Content Include="product_pic\LA-6400_2.jpg" />
+    <Content Include="product_pic\LA-640_1.jpg" />
+    <Content Include="product_pic\LA-640_2.jpg" />
+    <Content Include="product_pic\LA-650CP_1.jpg" />
+    <Content Include="product_pic\LA-650CP_2.jpg" />
+    <Content Include="product_pic\LA-650K_1.jpg" />
+    <Content Include="product_pic\LA-650K_2.jpg" />
+    <Content Include="product_pic\LA-650_1.jpg" />
+    <Content Include="product_pic\LA-650_2.jpg" />
+    <Content Include="product_pic\LA-660_1.jpg" />
+    <Content Include="product_pic\LA-660_2.jpg" />
+    <Content Include="product_pic\LA-6788_1.jpg" />
+    <Content Include="product_pic\LA-6788_2.jpg" />
+    <Content Include="product_pic\LA-680_1.jpg" />
+    <Content Include="product_pic\LA-680_2.jpg" />
+    <Content Include="product_pic\LA-888_1.jpg" />
+    <Content Include="product_pic\LA-888_2.jpg" />
+    <Content Include="product_pic\LA1000TC_1.jpg" />
+    <Content Include="product_pic\LA1000TC_2.jpg" />
+    <Content Include="product_pic\LA1700TC_1.jpg" />
+    <Content Include="product_pic\LA1700TC_2.jpg" />
+    <Content Include="product_pic\LA1800TC_1.jpg" />
+    <Content Include="product_pic\LA1800TC_2.jpg" />
+    <Content Include="product_pic\LA6020TC_1.jpg" />
+    <Content Include="product_pic\LA6020TC_2.jpg" />
+    <Content Include="product_pic\LA6320TC_1.jpg" />
+    <Content Include="product_pic\LA6320TC_2.jpg" />
+    <Content Include="product_pic\LA6520TC_1.jpg" />
+    <Content Include="product_pic\LA6520TC_2.jpg" />
+    <Content Include="product_pic\LD-814_1.jpg" />
+    <Content Include="product_pic\LD-814_2.jpg" />
+    <Content Include="product_pic\LD-826_1.jpg" />
+    <Content Include="product_pic\LD-826_2.jpg" />
+    <Content Include="product_pic\LD-828_1.jpg" />
+    <Content Include="product_pic\LD-828_2.jpg" />
+    <Content Include="product_pic\LD-838G_13.jpg" />
+    <Content Include="product_pic\LD-838G_2.jpg" />
+    <Content Include="product_pic\LD-838_1.jpg" />
+    <Content Include="product_pic\LD-838_2.jpg" />
+    <Content Include="product_pic\LD-868_1.jpg" />
+    <Content Include="product_pic\LD-868_2.jpg" />
+    <Content Include="product_pic\LD-878_1.jpg" />
+    <Content Include="product_pic\LD-878_2.jpg" />
+    <Content Include="product_pic\M6107_1.jpg" />
+    <Content Include="product_pic\M6107_2.jpg" />
+    <Content Include="product_pic\M6108_1.jpg" />
+    <Content Include="product_pic\M6108_2.jpg" />
+    <Content Include="product_pic\M6109_1.jpg" />
+    <Content Include="product_pic\M6109_2.jpg" />
+    <Content Include="product_pic\TJ-0931_1.jpg" />
+    <Content Include="product_pic\TJ-0931_2.jpg" />
+    <Content Include="product_pic\TJ-0936_1.jpg" />
+    <Content Include="product_pic\TJ-0936_2.jpg" />
+    <Content Include="product_pic\TJ-0937_1.jpg" />
+    <Content Include="product_pic\TJ-0937_2.jpg" />
+    <Content Include="product_pic\TJ-0938_1.jpg" />
+    <Content Include="product_pic\TJ-0938_2.jpg" />
+    <Content Include="product_pic\TJ-0946_1.jpg" />
+    <Content Include="product_pic\TJ-0946_2.jpg" />
+    <Content Include="product_pic\TJ-0947_1.jpg" />
+    <Content Include="product_pic\TJ-0947_2.jpg" />
+    <Content Include="product_pic\TJ-0948_1.jpg" />
+    <Content Include="product_pic\TJ-0948_2.jpg" />
+    <Content Include="product_pic\TJ-0950_1.jpg" />
+    <Content Include="product_pic\TJ-0950_2.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -208,38 +393,22 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Signup.aspx" />
-    <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
-    <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.Master.cs">
       <DependentUpon>index.Master</DependentUpon>
@@ -255,6 +424,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
@@ -262,20 +438,6 @@
     </Compile>
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
