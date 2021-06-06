@@ -1,9 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WebApplication2.WebForm1" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <head>
-        <title>Home</title>
-    </head>
+    <title>Home</title>
 
     <section class="slider_section">
          <div id="main_slider" class="carousel slide banner-main" data-ride="carousel">

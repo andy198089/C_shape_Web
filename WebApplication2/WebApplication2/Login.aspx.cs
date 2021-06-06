@@ -44,7 +44,7 @@ namespace WebApplication2
                             Session["Logined"] = "login";
                             Session["userName"] = sqlDataReader["userName"].ToString();
                             //主頁完成後要改連結，index.html為測試用
-                            Response.Redirect("index.html");
+                            Response.Redirect("Home.aspx");
                         }
                         else
                         {
