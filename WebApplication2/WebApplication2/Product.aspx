@@ -22,7 +22,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box">
+                        <div class="product-box" onclick="window.location='http://google.com';">
                             <i>
                                 <asp:ImageButton ID="ImageButton1" runat="server" Height="200px" Width="100px" /></i>
                             <h3>
@@ -112,7 +112,8 @@
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                         <div class="product-box">
                             <i>
-                                <asp:ImageButton ID="ImageButton12" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image1" runat="server" Height="200px" Width="100px" />
+                                <!-- <asp:ImageButton ID="ImageButton12" runat="server" Height="200px" Width="100px" /></i> -->
                             <h3>
                                 <asp:Label ID="Label12" runat="server" Text=""></asp:Label></h3>
                         </div>
