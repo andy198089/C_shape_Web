@@ -14,8 +14,7 @@ namespace WebApplication2
         {
             if (Session["Logined"] == "login")
             {
-                //主頁完成後要改連結，index.html為測試用
-                Response.Write("<script>alert('你已經登入過了');location.href='index.html';</script>");
+                Response.Write("<script>alert('你已經登入過了');location.href='Home.aspx';</script>");
             }
         }
 
@@ -42,8 +41,8 @@ namespace WebApplication2
                         if (Request.Form["password"] == sqlDataReader["password"].ToString())
                         {
                             Session["Logined"] = "login";
+                            Session["ID"] = sqlDataReader["id"];
                             Session["userName"] = sqlDataReader["userName"].ToString();
-                            //主頁完成後要改連結，index.html為測試用
                             Response.Redirect("Home.aspx");
                         }
                         else

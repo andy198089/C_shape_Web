@@ -13,5 +13,18 @@ namespace WebApplication2
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            if(Session["Logined"] == "login")
+            {
+                Session.RemoveAll();
+                Response.Write("<script>alert('登出完成');location.href='Login.aspx';</script>");
+            }
+            else
+            {
+                Response.Write("<script>alert('尚未登入');</script>");
+            }
+        }
     }
 }

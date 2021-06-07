@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-7 col-md-9 col-sm-9">
+                        <div class="col-xl-5 col-lg-6 col-md-5 col-sm-5">
                             <div class="menu-area">
                                 <div class="limit-box">
                                     <nav class="main-menu">
@@ -82,8 +82,6 @@
                                             <li><a href="Home.aspx">Home</a> </li>
                                             <li><a href="about.html">About</a> </li>
                                             <li><a href="Product.aspx">product</a> </li>
-                                            <li><a href="blog.html">Blog</a> </li>
-                                            <li><a href="contact.html">Contact</a> </li>
                                             <li class="mean-last"><a href="Signup.aspx">signup</a> </li>
                                         </ul>
                                     </nav>
@@ -91,7 +89,10 @@
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                            <li><a class="buy" href="Login.aspx">LOGIN</a></li>
+                            <li><a class="buy" href="Login.aspx">LOGIN</a></li>                           
+                        </div>
+                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" /></li>
                         </div>
                     </div>
                 </div>

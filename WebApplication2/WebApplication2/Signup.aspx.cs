@@ -15,8 +15,7 @@ namespace WebApplication2
         {
             if (Session["Logined"] == "login")
             {
-                //主頁完成後要改連結，index.html為測試用
-                Response.Write("<script>alert('已有會員');location.href='index.html';</script>");
+                Response.Write("<script>alert('已有會員');location.href='Home.aspx';</script>");
             }
         }
 
