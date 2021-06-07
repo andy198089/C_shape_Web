@@ -13,7 +13,6 @@
         <a href="">水塔進水器系列</a>
         <a href="">銅.不銹鋼球塞.逆止系列</a>
         <a href="">塑膠另件系列</a>
-        <a href="">test</a>
     </div>
     <!-- our product -->
     <div class="product">
