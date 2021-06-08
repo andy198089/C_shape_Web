@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication2
 {
-    public partial class Product : System.Web.UI.Page
+    public partial class Product8 : System.Web.UI.Page
     {
         public int PageCount { get; set; }
         public class product_inf
@@ -32,7 +32,7 @@ namespace WebApplication2
 
             SqlConnection sqlConnection = new SqlConnection(sql_data);
 
-            string product_list = "SPA淋浴柱$";
+            string product_list = "銅#不銹鋼球塞#逆止系列$";
 
             string sqlstr = $"select * from {product_list}";
 
@@ -73,7 +73,7 @@ namespace WebApplication2
             sqlConnection.Close();
 
             //分頁設置
-            if(product_infs.Count % 12 == 0)
+            if (product_infs.Count % 12 == 0)
             {
                 PageCount = product_infs.Count / 12;
             }
@@ -86,17 +86,17 @@ namespace WebApplication2
 
             int j = 12 * (pageIndex-1);
             //將資訊塞入
-            for (int i = 0; i < 12;i++)
+            for (int i = 0; i < 12; i++)
             {
-                if(i >= product_infs.Count-j)
+                if (i >= product_infs.Count - j)
                 {
                     labels[i].Text = "";
                     Images[i].ImageUrl = "";
                 }
                 else
                 {
-                    labels[i].Text = product_infs[i+j].product_type+ " "+ product_infs[i+j].product_name;
-                    Images[i].ImageUrl = $"~/product_pic/{product_infs[i+j].product_type}_2.jpg";
+                    labels[i].Text = product_infs[i + j].product_type + " " + product_infs[i + j].product_name;
+                    Images[i].ImageUrl = $"~/product_pic/{product_infs[i + j].product_type}_2.jpg";
                 }
             }
         }

@@ -1,18 +1,18 @@
-﻿<%@ Page Title="product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="WebApplication2.Product" %>
+﻿<%@ Page Title="product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="WebApplication2.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <title>Product</title>
 
     <div class="main-menu">
-        <a href="Product.aspx">SPA淋浴柱</a>
-        <a href="Product2.aspx">SPA花灑龍頭</a>
-        <a href="Product3.aspx">崁牆式系列</a>
-        <a href="Product4.aspx">47H龍頭系列</a>
-        <a href="Product5.aspx">台久龍頭系列</a>
-        <a href="Product6.aspx">RO龍頭系列</a>
-        <a href="Product7.aspx">水塔進水器系列</a>
-        <a href="Product8.aspx">銅.不銹鋼球塞.逆止系列</a>
-        <a href="Product9.aspx">塑膠另件系列</a>
+        <a href="">SPA淋浴柱</a>
+        <a href="">SPA花灑龍頭</a>
+        <a href="">崁牆式系列</a>
+        <a href="">47H龍頭系列</a>
+        <a href="">台久龍頭系列</a>
+        <a href="">RO龍頭系列</a>
+        <a href="">水塔進水器系列</a>
+        <a href="">銅.不銹鋼球塞.逆止系列</a>
+        <a href="">塑膠另件系列</a>
     </div>
     <!-- our product -->
     <div class="product">
@@ -21,6 +21,7 @@
         <div class="product-bg-white">
             <div class="container">
                 <div class="row">
+                    <asp:ListView ID="ListView1" runat="server"></asp:ListView>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                         <div class="product-box" onclick="window.location='http://google.com';">
                             <i>
@@ -119,11 +120,12 @@
                     </div>
                 </div>
             </div>
-            <!-- 分頁 -->
-            <div class="main-menu">
-                <%for (int i = 1; i <= PageCount; i++) 
-                    {%> 
-                <a href="Product.aspx?pageIndex=<%=i %>"><%= i %></a>
-                <% } %>
-            </div>
+            <asp:DataPager runat="server" ID="ContactsDataPager" PageSize="5">
+                <Fields>
+                    <asp:NextPreviousPagerField ShowFirstPageButton="true" ShowLastPageButton="true"
+                        FirstPageText="首頁" LastPageText="尾頁"
+                        NextPageText="下一頁" PreviousPageText="上一頁" />
+                </Fields>
+            </asp:DataPager>
+    </asp:ListView> 
 </asp:Content>

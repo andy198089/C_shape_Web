@@ -1,4 +1,4 @@
-﻿<%@ Page Title="product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="WebApplication2.Product" %>
+﻿<%@ Page Title="product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product2.aspx.cs" Inherits="WebApplication2.Product2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <title>Product</title>
@@ -123,7 +123,7 @@
             <div class="main-menu">
                 <%for (int i = 1; i <= PageCount; i++) 
                     {%> 
-                <a href="Product.aspx?pageIndex=<%=i %>"><%= i %></a>
+                <a href="Product2.aspx?pageIndex=<%=i %>"><%= i %></a>
                 <% } %>
             </div>
 </asp:Content>

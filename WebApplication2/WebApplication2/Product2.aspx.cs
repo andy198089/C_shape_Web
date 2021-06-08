@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication2
 {
-    public partial class Product : System.Web.UI.Page
+    public partial class Product2 : System.Web.UI.Page
     {
         public int PageCount { get; set; }
         public class product_inf
@@ -32,7 +32,7 @@ namespace WebApplication2
 
             SqlConnection sqlConnection = new SqlConnection(sql_data);
 
-            string product_list = "SPA淋浴柱$";
+            string product_list = "SPA花灑龍頭$";
 
             string sqlstr = $"select * from {product_list}";
 
@@ -73,7 +73,7 @@ namespace WebApplication2
             sqlConnection.Close();
 
             //分頁設置
-            if(product_infs.Count % 12 == 0)
+            if (product_infs.Count % 12 == 0)
             {
                 PageCount = product_infs.Count / 12;
             }
@@ -99,6 +99,9 @@ namespace WebApplication2
                     Images[i].ImageUrl = $"~/product_pic/{product_infs[i+j].product_type}_2.jpg";
                 }
             }
+
+            
+
         }
     }
 }
