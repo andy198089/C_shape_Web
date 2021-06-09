@@ -48,9 +48,6 @@ body {
 	font-weight: normal;
 	overflow-x: hidden;
 }
-.side-menu{
-
-}
 
 a {
 	color: #1f1f1f;
@@ -2368,4 +2365,8 @@ text-align: center;
 	left: 10px;
 	top: inherit;
 	bottom: 10px;
+}
+
+.side-menu a {
+	margin-right: 10px;
 }

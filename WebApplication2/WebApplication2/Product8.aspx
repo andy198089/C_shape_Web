@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <title>Product</title>
 
-    <div class="main-menu">
+    <div class="main-menu side-menu">
         <a href="Product.aspx">SPA淋浴柱</a>
         <a href="Product2.aspx">SPA花灑龍頭</a>
         <a href="Product3.aspx">崁牆式系列</a>
@@ -120,10 +120,29 @@
                 </div>
             </div>
             <!-- 分頁 -->
-            <div class="main-menu">
+            <div class="main-menu side-menu">
+                <!-- 前一頁 -->
+                <%if (NowPage == 1)
+                    {%>
+                <a href="Product8.aspx?pageIndex=<%=1 %>"><<</a>
+                <% }
+                  else
+                    {%>
+                <a href="Product8.aspx?pageIndex=<%=(NowPage-1) %>"><<</a>
+                <% }%>
+                <!-- 各頁 -->
                 <%for (int i = 1; i <= PageCount; i++) 
                     {%> 
                 <a href="Product8.aspx?pageIndex=<%=i %>"><%= i %></a>
                 <% } %>
+                <!-- 後一頁 -->
+                <%if (NowPage == PageCount)
+                    {%>
+                <a href="Product8.aspx?pageIndex=<%=PageCount %>">>></a>
+                <% }
+                  else
+                    {%>
+                <a href="Product8.aspx?pageIndex=<%=(NowPage+1) %>">>></a>
+                <% }%>
             </div>
 </asp:Content>

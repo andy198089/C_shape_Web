@@ -11,6 +11,7 @@ namespace WebApplication2
     public partial class Product5 : System.Web.UI.Page
     {
         public int PageCount { get; set; }
+        public int NowPage { get; set; }
         public class product_inf
         {
             public int ID { get; set; }
@@ -83,6 +84,7 @@ namespace WebApplication2
             }
             //取得頁碼參數
             int pageIndex = int.Parse(Request["pageIndex"] ?? "1"); //默認為1
+            NowPage = pageIndex;
 
             int j = 12 * (pageIndex-1);
             //將資訊塞入
