@@ -2370,3 +2370,7 @@ text-align: center;
 .side-menu a {
 	margin-right: 10px;
 }
+
+.select-area {
+	cursor: pointer;
+}

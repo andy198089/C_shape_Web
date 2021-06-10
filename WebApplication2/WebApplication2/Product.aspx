@@ -22,7 +22,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box" onclick="window.location='http://google.com';">
+                        <div class="product-box select-area" onclick="window.location='http://google.com';">
                             <i>
                                 <asp:Image ID="Image1" runat="server" Height="200px" Width="100px" /></i>
                             <h3>
