@@ -1,4 +1,4 @@
-﻿<%@ Page Title="product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product3.aspx.cs" Inherits="WebApplication2.Product3" %>
+﻿<%@ Page Title="product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product4.aspx.cs" Inherits="WebApplication2.Product4" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <title>Product</title>
@@ -22,7 +22,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area" onclick="window.location='http://google.com';">
+                        <div class="product-box" onclick="window.location='http://google.com';">
                             <i>
                                 <asp:Image ID="Image1" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image2" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image3" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image4" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image5" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image6" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image7" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image8" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image9" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image10" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image11" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="product-box select-area">
+                        <div class="product-box">
                             <i>
                                 <asp:Image ID="Image12" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -124,25 +124,25 @@
                 <!-- 前一頁 -->
                 <%if (NowPage == 1)
                     {%>
-                <a href="Product3.aspx?pageIndex=<%=1 %>"><<</a>
+                <a href="Product4.aspx?pageIndex=<%=1 %>"><<</a>
                 <% }
                   else
                     {%>
-                <a href="Product3.aspx?pageIndex=<%=(NowPage-1) %>"><<</a>
+                <a href="Product4.aspx?pageIndex=<%=(NowPage-1) %>"><<</a>
                 <% }%>
                 <!-- 各頁 -->
                 <%for (int i = 1; i <= PageCount; i++) 
                     {%> 
-                <a href="Product3.aspx?pageIndex=<%=i %>"><%= i %></a>
+                <a href="Product4.aspx?pageIndex=<%=i %>"><%= i %></a>
                 <% } %>
                 <!-- 後一頁 -->
                 <%if (NowPage == PageCount)
                     {%>
-                <a href="Product3.aspx?pageIndex=<%=PageCount %>">>></a>
+                <a href="Product4.aspx?pageIndex=<%=PageCount %>">>></a>
                 <% }
                   else
                     {%>
-                <a href="Product3.aspx?pageIndex=<%=(NowPage+1) %>">>></a>
+                <a href="Product4.aspx?pageIndex=<%=(NowPage+1) %>">>></a>
                 <% }%>
             </div>
 </asp:Content>
