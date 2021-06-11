@@ -116,6 +116,7 @@
                         </div>
                          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
                             <li><asp:Button class="buy select-area" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
+<<<<<<< HEAD
 =======
                             <li><a class="buy" href="Login.aspx">LOGIN</a></li>
                             
@@ -123,6 +124,8 @@
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
                             <asp:Button ID="Button2" runat="server" Text="LOGOUT" class="buy" OnClick="Button2_Click"/>
 >>>>>>> Stashed changes
+=======
+>>>>>>> 2efcb562025d4e8f6649e146e45494bbc45b2805
                         </div>
                     </div>
                 </div>
