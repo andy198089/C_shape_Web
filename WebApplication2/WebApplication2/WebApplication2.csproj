@@ -323,6 +323,8 @@
     <Content Include="product_pic\TJ-0948_2.jpg" />
     <Content Include="product_pic\TJ-0950_1.jpg" />
     <Content Include="product_pic\TJ-0950_2.jpg" />
+    <Content Include="UserModify.aspx" />
+    <Content Include="Userpage.aspx" />
     <Content Include="Vendor .html" />
     <Content Include="blog.html" />
     <Content Include="contact.html" />
@@ -527,6 +529,20 @@
     </Compile>
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserModify.aspx.cs">
+      <DependentUpon>UserModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserModify.aspx.designer.cs">
+      <DependentUpon>UserModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Userpage.aspx.cs">
+      <DependentUpon>Userpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userpage.aspx.designer.cs">
+      <DependentUpon>Userpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

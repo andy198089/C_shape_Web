@@ -26,7 +26,7 @@ namespace WebApplication2
 
                 SqlConnection sqlConnection = new SqlConnection(sql_data);
 
-                string sqlstr = "select * from Users where acount ='" + Request.Form["account"] + "'";
+                string sqlstr = "select * from Users where account ='" + Request.Form["account"] + "'";
 
                 SqlCommand sqlCommand = new SqlCommand(sqlstr, sqlConnection);
 

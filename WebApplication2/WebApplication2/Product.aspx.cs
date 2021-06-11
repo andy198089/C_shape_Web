@@ -8,33 +8,10 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication2
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
     public partial class Product : System.Web.UI.Page
     {
         public int PageCount { get; set; }
         public int NowPage { get; set; }
-<<<<<<< HEAD
-=======
-    public partial class WebForm2 : System.Web.UI.Page
-    {
->>>>>>> Stashed changes
-<<<<<<< HEAD
-=======
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
-=======
->>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
-=======
-    public partial class WebForm2 : System.Web.UI.Page
-    {
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
-=======
-    public partial class WebForm2 : System.Web.UI.Page
-    {
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
         public class product_inf
         {
             public int ID { get; set; }
@@ -47,22 +24,8 @@ namespace WebApplication2
             List<Label> labels = new List<Label>() { Label1, Label2, Label3, Label4, Label5, Label6, Label7, Label8, Label9, Label10, Label11, Label12 };
 
             //imgae_list
-            List<ImageButton> imageButtons = new List<ImageButton>() { ImageButton1, ImageButton2, ImageButton3, ImageButton4, ImageButton5, ImageButton6, 
-                ImageButton7, ImageButton8, ImageButton9 , ImageButton10, ImageButton11, ImageButton12 };
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> Stashed changes
-<<<<<<< HEAD
-=======
             List<Image> Images = new List<Image>() { Image1, Image2, Image3, Image4, Image5, Image6,
                 Image7, Image8, Image9 , Image10, Image11, Image12 };
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
-=======
->>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
-=======
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
-=======
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
             //product_information_list
             List<product_inf> product_infs = new List<product_inf>();
 
@@ -90,14 +53,6 @@ namespace WebApplication2
                         product_type = sqlDataReader["型號"].ToString(),
                         product_name = sqlDataReader["名稱"].ToString(),
                     };
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
-=======
->>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
                     if (product_infs.Count == 0)
                     {
                         product_infs.Add(product_inf);
@@ -114,32 +69,10 @@ namespace WebApplication2
                             product_infs.Add(product_inf);
                         }
                     }
-=======
-                    product_infs.Add(product_inf);                    
->>>>>>> Stashed changes
-<<<<<<< HEAD
-=======
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
-=======
->>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
-=======
-                    product_infs.Add(product_inf);                    
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
-=======
-                    product_infs.Add(product_inf);                    
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
                 }
             }
             sqlConnection.Close();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
-=======
->>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
             //分頁設置
             if(product_infs.Count % 12 == 0)
             {
@@ -166,42 +99,6 @@ namespace WebApplication2
                 {
                     labels[i].Text = product_infs[i+j].product_type+ " "+ product_infs[i+j].product_name;
                     Images[i].ImageUrl = $"~/product_pic/{product_infs[i+j].product_type}_2.jpg";
-=======
-<<<<<<< HEAD
-=======
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
-=======
->>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
-=======
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
-=======
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
-            //將資訊塞入
-            for(int i = 0; i < 12;i++)
-            {
-                if(i >= product_infs.Count)
-                {
-                    labels[i].Text = "";
-                    imageButtons[i].ImageUrl = "";
-                }
-                else
-                {
-                    labels[i].Text = product_infs[i].product_type+ " "+ product_infs[i].product_name;
-                    imageButtons[i].ImageUrl = $"~/product_pic/{product_infs[i].product_type}_2.jpg";
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> Stashed changes
-<<<<<<< HEAD
-=======
-                    labels[i].Text = product_infs[i+j].product_type+ " "+ product_infs[i+j].product_name;
-                    Images[i].ImageUrl = $"~/product_pic/{product_infs[i+j].product_type}_2.jpg";
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
-=======
->>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
-=======
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
-=======
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
                 }
             }
         }

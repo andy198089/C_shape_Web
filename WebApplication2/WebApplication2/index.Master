@@ -57,9 +57,9 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="top-box">
-                                    <p>long established fact that a reader will be </p>
-                                </div>
+                                <div class="top-box"  style="text-align:right;">
+                                    <p ><a href="Userpage.aspx" style="font-size: x-large; font-weight: bold">會員專區</a> </p>
+                                </div>>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                             <div class="full">
                                 <div class="center-desk">
-                                    <div class="logo"><a href="index.html">
+                                    <div class="logo"><a href="Home.aspx">
                                         <img src="images/logo.jpg" alt="logo" /></a> </div>
                                 </div>
                             </div>
@@ -92,43 +92,7 @@
                             <li><a class="buy" href="Login.aspx">LOGIN</a></li>                           
                         </div>
                          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                             <li><asp:Button class="buy select-area" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
-=======
-                            <li><a class="buy" href="Login.aspx">LOGIN</a></li>
-                            
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                            <asp:Button ID="Button2" runat="server" Text="LOGOUT" class="buy" OnClick="Button2_Click"/>
->>>>>>> Stashed changes
-<<<<<<< HEAD
-=======
->>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
-=======
-                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
->>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
-=======
->>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
-=======
-                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" /></li>
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
-=======
-                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
->>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
-=======
-                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
->>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
-=======
-                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" /></li>
->>>>>>> parent of 4f7922f (2021/06/11 余兆華)
-=======
-                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
->>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                         </div>
                     </div>
                 </div>
