@@ -302,10 +302,12 @@ C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\obj\Debug\
 C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CopyComplete
 C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
-<<<<<<< HEAD
 <<<<<<< Updated upstream
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
+=======
+>>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 C:\Users\user\Desktop\Alvin\組\C_shape_Web-main\WebApplication2\WebApplication2\bin\WebApplication2.dll.config
 C:\Users\user\Desktop\Alvin\組\C_shape_Web-main\WebApplication2\WebApplication2\bin\WebApplication2.dll
 C:\Users\user\Desktop\Alvin\組\C_shape_Web-main\WebApplication2\WebApplication2\bin\WebApplication2.pdb
@@ -382,7 +384,6 @@ C:\Users\user\Desktop\Alvin\組\C_shape_Web-main\WebApplication2\WebApplication2
 C:\Users\user\Desktop\Alvin\組\C_shape_Web-main\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CopyComplete
 C:\Users\user\Desktop\Alvin\組\C_shape_Web-main\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\user\Desktop\Alvin\組\C_shape_Web-main\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
-<<<<<<< HEAD
 =======
 =======
 =======
@@ -468,5 +469,8 @@ C:\Users\2010c\Documents\GitHub\C_shape_Web\WebApplication2\WebApplication2\obj\
 =======
 >>>>>>> 4822d0f5b00b8875435c64a09d3628540d6f50d9
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
+=======
+>>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)

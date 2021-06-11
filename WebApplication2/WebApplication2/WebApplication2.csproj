@@ -114,7 +114,6 @@
     <Content Include="Product4.aspx" />
     <Content Include="Product3.aspx" />
     <Content Include="Product2.aspx" />
-<<<<<<< HEAD
     <Content Include="product_pic\C333_1.jpg" />
     <Content Include="product_pic\C333_2.jpg" />
     <Content Include="product_pic\F666_1.jpg" />
@@ -397,8 +396,11 @@
     <Content Include="Login.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="product.html" />
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
+=======
+>>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
     <Content Include="product_pic\C333_1.jpg" />
     <Content Include="product_pic\C333_2.jpg" />
     <Content Include="product_pic\F666_1.jpg" />
@@ -645,10 +647,12 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
 <<<<<<< Updated upstream
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
+=======
+>>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
     <Compile Include="Product9.aspx.cs">
       <DependentUpon>Product9.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -705,11 +709,13 @@
     <Compile Include="Product2.aspx.designer.cs">
       <DependentUpon>Product2.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
+=======
+>>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
