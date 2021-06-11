@@ -70,8 +70,12 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image2" runat="server" Height="200px" Width="100px" /></i>
 =======
@@ -90,6 +94,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
                             <i>
@@ -101,6 +106,9 @@
 >>>>>>> Stashed changes
 =======
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image3" runat="server" Height="200px" Width="100px" /></i>
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
@@ -110,8 +118,12 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image4" runat="server" Height="200px" Width="100px" /></i>
 =======
@@ -130,6 +142,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
                             <i>
@@ -141,6 +154,9 @@
 >>>>>>> Stashed changes
 =======
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image5" runat="server" Height="200px" Width="100px" /></i>
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
@@ -149,6 +165,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
@@ -161,6 +178,9 @@
 >>>>>>> Stashed changes
 =======
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image6" runat="server" Height="200px" Width="100px" /></i>
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
@@ -170,8 +190,12 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image7" runat="server" Height="200px" Width="100px" /></i>
 =======
@@ -190,6 +214,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
                             <i>
@@ -201,6 +226,9 @@
 >>>>>>> Stashed changes
 =======
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image8" runat="server" Height="200px" Width="100px" /></i>
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
@@ -209,6 +237,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
@@ -221,6 +250,9 @@
 >>>>>>> Stashed changes
 =======
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image9" runat="server" Height="200px" Width="100px" /></i>
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
@@ -230,8 +262,12 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image10" runat="server" Height="200px" Width="100px" /></i>
 =======
@@ -250,6 +286,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
                             <i>
@@ -261,6 +298,9 @@
 >>>>>>> Stashed changes
 =======
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image11" runat="server" Height="200px" Width="100px" /></i>
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
@@ -269,6 +309,7 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
                         <div class="product-box select-area">
@@ -281,6 +322,9 @@
 >>>>>>> Stashed changes
 =======
                         <div class="product-box select-area">
+=======
+                        <div class="product-box">
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                             <i>
                                 <asp:Image ID="Image12" runat="server" Height="200px" Width="100px" /></i>
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)

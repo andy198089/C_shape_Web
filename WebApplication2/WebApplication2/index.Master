@@ -92,6 +92,7 @@
                             <li><a class="buy" href="Login.aspx">LOGIN</a></li>                           
                         </div>
                          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+<<<<<<< HEAD
                             <li><asp:Button class="buy select-area" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
 <<<<<<< HEAD
 =======
@@ -103,6 +104,9 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
+=======
+                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                         </div>
                     </div>
                 </div>
