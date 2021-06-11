@@ -106,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
+    <Content Include="png\LNIN.png" />
+    <Content Include="png\MEYA.png" />
+    <Content Include="png\TOYA.png" />
     <Content Include="Product9.aspx" />
     <Content Include="Product8.aspx" />
     <Content Include="Product7.aspx" />
@@ -325,7 +328,7 @@
     <Content Include="product_pic\TJ-0950_2.jpg" />
     <Content Include="UserModify.aspx" />
     <Content Include="Userpage.aspx" />
-    <Content Include="Vendor .html" />
+    <Content Include="Vendor.html" />
     <Content Include="blog.html" />
     <Content Include="contact.html" />
     <Content Include="Content\bootstrap-theme.css" />

@@ -80,7 +80,7 @@
                                     <nav class="main-menu">
                                         <ul class="menu-area-main">
                                             <li><a href="Home.aspx">Home</a> </li>
-                                            <li><a href="about.html">About</a> </li>
+                                            <li><a href="Vendor.aspx">Vendor</a> </li>
                                             <li><a href="Product.aspx">product</a> </li>
                                             <li class="mean-last"><a href="Signup.aspx">signup</a> </li>
                                         </ul>
