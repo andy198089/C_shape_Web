@@ -114,6 +114,7 @@
     <Content Include="Product4.aspx" />
     <Content Include="Product3.aspx" />
     <Content Include="Product2.aspx" />
+<<<<<<< HEAD
     <Content Include="product_pic\C333_1.jpg" />
     <Content Include="product_pic\C333_2.jpg" />
     <Content Include="product_pic\F666_1.jpg" />
@@ -396,6 +397,8 @@
     <Content Include="Login.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="product.html" />
+=======
+>>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
     <Content Include="product_pic\C333_1.jpg" />
     <Content Include="product_pic\C333_2.jpg" />
     <Content Include="product_pic\F666_1.jpg" />
@@ -611,11 +614,6 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Signup.aspx" />
-<<<<<<< Updated upstream
-    <Content Include="UserModify.aspx" />
-    <Content Include="Userpage.aspx" />
-=======
->>>>>>> Stashed changes
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -647,7 +645,10 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
     <Compile Include="Product9.aspx.cs">
       <DependentUpon>Product9.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -704,8 +705,11 @@
     <Compile Include="Product2.aspx.designer.cs">
       <DependentUpon>Product2.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -721,23 +725,6 @@
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
-<<<<<<< Updated upstream
-    <Compile Include="UserModify.aspx.cs">
-      <DependentUpon>UserModify.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserModify.aspx.designer.cs">
-      <DependentUpon>UserModify.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Userpage.aspx.cs">
-      <DependentUpon>Userpage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Userpage.aspx.designer.cs">
-      <DependentUpon>Userpage.aspx</DependentUpon>
-    </Compile>
-=======
->>>>>>> Stashed changes
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
