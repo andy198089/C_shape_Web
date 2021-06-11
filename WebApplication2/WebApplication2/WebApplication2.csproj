@@ -114,6 +114,7 @@
     <Content Include="Product4.aspx" />
     <Content Include="Product3.aspx" />
     <Content Include="Product2.aspx" />
+<<<<<<< HEAD
     <Content Include="product_pic\C333_1.jpg" />
     <Content Include="product_pic\C333_2.jpg" />
     <Content Include="product_pic\F666_1.jpg" />
@@ -396,6 +397,8 @@
     <Content Include="Login.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="product.html" />
+=======
+>>>>>>> 2efcb562025d4e8f6649e146e45494bbc45b2805
     <Content Include="product_pic\C333_1.jpg" />
     <Content Include="product_pic\C333_2.jpg" />
     <Content Include="product_pic\F666_1.jpg" />
@@ -428,26 +431,42 @@
     <Content Include="product_pic\L8011DBB_2.jpg" />
     <Content Include="product_pic\L8012EBB_1.jpg" />
     <Content Include="product_pic\L8012EBB_2.jpg" />
+    <Content Include="product_pic\L8013CBB_1.jpg" />
+    <Content Include="product_pic\L8013CBB_2.jpg" />
     <Content Include="product_pic\LA-1060_1.jpg" />
     <Content Include="product_pic\LA-1060_2.jpg" />
     <Content Include="product_pic\LA-1064_1.jpg" />
     <Content Include="product_pic\LA-1064_2.jpg" />
     <Content Include="product_pic\LA-1439_1.jpg" />
     <Content Include="product_pic\LA-1439_2.jpg" />
+    <Content Include="product_pic\LA-1440_2.jpg" />
+    <Content Include="product_pic\LA-1441_2.jpg" />
     <Content Include="product_pic\LA-1442_1.jpg" />
     <Content Include="product_pic\LA-1442_2.jpg" />
+    <Content Include="product_pic\LA-1443_2.jpg" />
     <Content Include="product_pic\LA-1445_1.jpg" />
     <Content Include="product_pic\LA-1445_2.jpg" />
     <Content Include="product_pic\LA-1447_1.jpg" />
     <Content Include="product_pic\LA-1447_2.jpg" />
+    <Content Include="product_pic\LA-1448_2.jpg" />
+    <Content Include="product_pic\LA-1449_2.jpg" />
     <Content Include="product_pic\LA-1450_1.jpg" />
     <Content Include="product_pic\LA-1450_2.jpg" />
+    <Content Include="product_pic\LA-1451_2.jpg" />
+    <Content Include="product_pic\LA-1452_2.jpg" />
+    <Content Include="product_pic\LA-1453_2.jpg" />
+    <Content Include="product_pic\LA-1454_2.jpg" />
+    <Content Include="product_pic\LA-1455_2.jpg" />
+    <Content Include="product_pic\LA-1456_2.jpg" />
+    <Content Include="product_pic\LA-1457_2.jpg" />
     <Content Include="product_pic\LA-147_1.jpg" />
     <Content Include="product_pic\LA-147_2.jpg" />
     <Content Include="product_pic\LA-1485_1.jpg" />
     <Content Include="product_pic\LA-1485_2.jpg" />
+    <Content Include="product_pic\LA-1487_2.jpg" />
     <Content Include="product_pic\LA-1489_1.jpg" />
     <Content Include="product_pic\LA-1489_2.jpg" />
+    <Content Include="product_pic\LA-1490_2.jpg" />
     <Content Include="product_pic\LA-1491_1.jpg" />
     <Content Include="product_pic\LA-1491_2.jpg" />
     <Content Include="product_pic\LA-1492_1.jpg" />
@@ -464,8 +483,13 @@
     <Content Include="product_pic\LA-1497_2.jpg" />
     <Content Include="product_pic\LA-1789_1.jpg" />
     <Content Include="product_pic\LA-1789_2.jpg" />
+    <Content Include="product_pic\LA-1790_2.jpg" />
+    <Content Include="product_pic\LA-1791_2.jpg" />
+    <Content Include="product_pic\LA-1792_2.jpg" />
+    <Content Include="product_pic\LA-1793_2.jpg" />
     <Content Include="product_pic\LA-1834_1.jpg" />
     <Content Include="product_pic\LA-1834_2.jpg" />
+    <Content Include="product_pic\LA-1835_2.jpg" />
     <Content Include="product_pic\LA-1836_1.jpg" />
     <Content Include="product_pic\LA-1836_2.jpg" />
     <Content Include="product_pic\LA-1837_1.jpg" />
@@ -496,6 +520,8 @@
     <Content Include="product_pic\LA-580A_2.jpg" />
     <Content Include="product_pic\LA-581A_1.jpg" />
     <Content Include="product_pic\LA-581A_2.jpg" />
+    <Content Include="product_pic\LA-582A_1.jpg" />
+    <Content Include="product_pic\LA-582A_2.jpg" />
     <Content Include="product_pic\LA-5830_1.jpg" />
     <Content Include="product_pic\LA-5830_2.jpg" />
     <Content Include="product_pic\LA-583A_1.jpg" />
@@ -582,6 +608,79 @@
     <Content Include="product_pic\TJ-0948_2.jpg" />
     <Content Include="product_pic\TJ-0950_1.jpg" />
     <Content Include="product_pic\TJ-0950_2.jpg" />
+    <Content Include="Vendor .html" />
+    <Content Include="blog.html" />
+    <Content Include="contact.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="css\meanmenu.css" />
+    <Content Include="css\nice-select.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\style.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Home.aspx" />
+    <Content Include="index.Master" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="icon\1.png" />
+    <Content Include="icon\2.png" />
+    <Content Include="icon\3.png" />
+    <Content Include="icon\4.png" />
+    <Content Include="icon\calll.png" />
+    <Content Include="icon\p1.png" />
+    <Content Include="icon\p2.png" />
+    <Content Include="icon\p3.png" />
+    <Content Include="icon\p4.png" />
+    <Content Include="icon\p5.png" />
+    <Content Include="icon\p6.png" />
+    <Content Include="icon\p7.png" />
+    <Content Include="icon\service1.png" />
+    <Content Include="icon\service2.png" />
+    <Content Include="icon\service3.png" />
+    <Content Include="icon\service4.png" />
+    <Content Include="icon\service5.png" />
+    <Content Include="icon\service6.png" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\lllll.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\mapimg.jpg" />
+    <Content Include="images\pc_layout.png" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\jquery-3.0.0.min.js" />
+    <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\plugin.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Product.aspx" />
+    <Content Include="product.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -647,7 +746,10 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 2efcb562025d4e8f6649e146e45494bbc45b2805
     <Compile Include="Product9.aspx.cs">
       <DependentUpon>Product9.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -704,8 +806,11 @@
     <Compile Include="Product2.aspx.designer.cs">
       <DependentUpon>Product2.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> 2efcb562025d4e8f6649e146e45494bbc45b2805
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
