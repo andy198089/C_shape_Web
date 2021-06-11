@@ -303,6 +303,7 @@ C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\obj\Debug\
 C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
@@ -475,5 +476,7 @@ C:\Users\2010c\Documents\GitHub\C_shape_Web\WebApplication2\WebApplication2\obj\
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)

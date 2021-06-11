@@ -430,6 +430,7 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
@@ -499,6 +500,8 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)
     <Compile Include="Product.aspx.cs">

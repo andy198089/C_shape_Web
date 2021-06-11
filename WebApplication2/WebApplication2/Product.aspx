@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="WebApplication2.WebForm2" %>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 <<<<<<< HEAD
 =======
@@ -9,10 +10,13 @@
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 =======
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)
+=======
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <title>Product</title>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
@@ -33,6 +37,8 @@
 =======
 =======
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)
+=======
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
     <div class="main-menu">
         <a href="">SPA淋浴柱</a>
         <a href="">SPA花灑龍頭</a>
@@ -44,12 +50,15 @@
         <a href="">銅.不銹鋼球塞.逆止系列</a>
         <a href="">塑膠另件系列</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 <<<<<<< HEAD
 =======
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)
     </div>
@@ -65,6 +74,7 @@
                             <i>
                                 <asp:ImageButton ID="ImageButton1" runat="server" Height="200px" Width="100px" /></i>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 <<<<<<< HEAD
 =======
@@ -76,11 +86,14 @@
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 =======
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)
+=======
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
                             <h3>
                                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,6 +128,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton2" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -131,6 +149,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -159,6 +178,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton3" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -175,6 +199,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -203,6 +228,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton4" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -219,6 +249,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -247,6 +278,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton5" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -263,6 +299,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -291,6 +328,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton6" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -307,6 +349,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -335,6 +378,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton7" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -351,6 +399,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -379,6 +428,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton8" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -395,6 +449,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -423,6 +478,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton9" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -439,6 +499,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -467,6 +528,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton10" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -483,6 +549,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -511,6 +578,11 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton11" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
                         <div class="product-box">
                             <i>
@@ -527,6 +599,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
 <<<<<<< Updated upstream
@@ -560,12 +633,18 @@
                             <i>
                                 <asp:ImageButton ID="ImageButton12" runat="server" Height="200px" Width="100px" /></i>
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)
+=======
+                        <div class="product-box">
+                            <i>
+                                <asp:ImageButton ID="ImageButton12" runat="server" Height="200px" Width="100px" /></i>
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
                             <h3>
                                 <asp:Label ID="Label12" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
@@ -607,6 +686,9 @@
 >>>>>>> parent of 4a114ff (2021/6/11 by 晉文)
 =======
 >>>>>>> parent of 8ed0a03 (2021/06/11 余兆華)
+=======
+            
+>>>>>>> parent of 4f7922f (2021/06/11 余兆華)
 =======
             
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)
