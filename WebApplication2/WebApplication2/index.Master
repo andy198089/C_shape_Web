@@ -97,6 +97,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <li><asp:Button class="buy select-area" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
 =======
                             <li><a class="buy" href="Login.aspx">LOGIN</a></li>
@@ -125,6 +126,9 @@
 =======
                             <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" /></li>
 >>>>>>> parent of 4f7922f (2021/06/11 余兆華)
+=======
+                            <li><asp:Button class="buy" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
+>>>>>>> parent of 2efcb56 (2021/6/10 by 晉文)
                         </div>
                     </div>
                 </div>
