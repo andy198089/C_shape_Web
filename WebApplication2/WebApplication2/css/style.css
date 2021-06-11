@@ -2367,3 +2367,14 @@ text-align: center;
 	top: inherit;
 	bottom: 10px;
 }
+<<<<<<< Updated upstream
+
+.side-menu a {
+	margin-right: 10px;
+}
+
+.select-area {
+	cursor: pointer;
+}
+=======
+>>>>>>> Stashed changes

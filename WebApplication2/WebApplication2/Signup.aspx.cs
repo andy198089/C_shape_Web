@@ -15,7 +15,12 @@ namespace WebApplication2
         {
             if (Session["Logined"] == "login")
             {
+<<<<<<< Updated upstream
                 Response.Write("<script>alert('已有會員');location.href='Home.aspx';</script>");
+=======
+                //主頁完成後要改連結
+                Response.Write("<script>alert('已有會員');location.href='index.html';</script>");
+>>>>>>> Stashed changes
             }
         }
 
@@ -27,7 +32,7 @@ namespace WebApplication2
 
                 SqlConnection sqlConnection = new SqlConnection(sql_data);
 
-                string sqlstr_accountCheck = "select * from Users where acount ='" + Request.Form["account"] + "'";
+                string sqlstr_accountCheck = "select * from Users where account ='" + Request.Form["account"] + "'";
 
                 SqlCommand sqlCommand = new SqlCommand(sqlstr_accountCheck, sqlConnection);
 
@@ -46,20 +51,20 @@ namespace WebApplication2
                     if (Request.Form["password"] != "" && (Request.Form["password"] == Request.Form["password2"]) && Request.Form["userName"] != "")
                     {
                         sqlConnection.Open();
-                        string sqlstr = $"insert into [Users](acount,password,userName) values (@acount,@password,@userName)";
+                        string sqlstr = $"insert into [Users](account,password,userName) values (@account,@password,@userName)";
 
-                        SqlCommand sqlcommand2 = new SqlCommand(sqlstr, sqlConnection);
+                        SqlCommand sqlCommand2 = new SqlCommand(sqlstr, sqlConnection);
 
-                        sqlcommand2.Parameters.Add("@acount", SqlDbType.NVarChar);
-                        sqlcommand2.Parameters["@acount"].Value = Request.Form["account"];
+                        sqlCommand2.Parameters.Add("@account", SqlDbType.NVarChar);
+                        sqlCommand2.Parameters["@account"].Value = Request.Form["account"];
 
-                        sqlcommand2.Parameters.Add("@password", SqlDbType.NVarChar);
-                        sqlcommand2.Parameters["@password"].Value = Request.Form["password"];
+                        sqlCommand2.Parameters.Add("@password", SqlDbType.NVarChar);
+                        sqlCommand2.Parameters["@password"].Value = Request.Form["password"];
 
-                        sqlcommand2.Parameters.Add("@userName", SqlDbType.NVarChar);
-                        sqlcommand2.Parameters["@userName"].Value = Request.Form["userName"];
+                        sqlCommand2.Parameters.Add("@userName", SqlDbType.NVarChar);
+                        sqlCommand2.Parameters["@userName"].Value = Request.Form["userName"];
 
-                        sqlcommand2.ExecuteNonQuery();                        
+                        sqlCommand2.ExecuteNonQuery();                        
                         Response.Write("<script>alert('帳號註冊成功,請重新登入');location.href='Login.aspx';</script>");
                         sqlConnection.Close();
                     }
