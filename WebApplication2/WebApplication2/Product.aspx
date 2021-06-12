@@ -4,15 +4,12 @@
     <title>Product</title>
 
     <div class="main-menu side-menu">
-        <a href="Product.aspx">SPA淋浴柱</a>
-        <a href="Product2.aspx">SPA花灑龍頭</a>
-        <a href="Product3.aspx">崁牆式系列</a>
-        <a href="Product4.aspx">47H龍頭系列</a>
-        <a href="Product5.aspx">台久龍頭系列</a>
-        <a href="Product6.aspx">RO龍頭系列</a>
-        <a href="Product7.aspx">水塔進水器系列</a>
-        <a href="Product8.aspx">銅.不銹鋼球塞.逆止系列</a>
-        <a href="Product9.aspx">塑膠另件系列</a>
+
+        <%for(int i=0; i< datanames.Count; i++) 
+            {%>
+        <a href="Product.aspx?pageclass=<%=(i+1) %>"><%=datanames[i] %></a>
+        <% }%>
+
     </div>
     <!-- our product -->
     <div class="product">
@@ -21,98 +18,100 @@
         <div class="product-bg-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div1" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area" onclick="window.location='http://google.com';">
                             <i>
-                                <asp:Image ID="Image1" runat="server" Height="200px" Width="100px" /></i>
-                            <h3>
-                                <asp:Label ID="Label1" runat="server" Text=""></asp:Label></h3>
+                                <asp:Image ID="Image1" runat="server" Height="200px" Width="150px" />
+                            </i>
+                            <h3>                                
+                                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                            </h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div2" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image2" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image2" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label2" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div3" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image3" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image3" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label3" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div4" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image4" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image4" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label4" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div5" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image5" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image5" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label5" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div6" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image6" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image6" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label6" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div7" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image7" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image7" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label7" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div8" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image8" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image8" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label8" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div9" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image9" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image9" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label9" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div10" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image10" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image10" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label10" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div11" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image11" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image11" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label11" runat="server" Text=""></asp:Label></h3>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div ID="product_div12" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
                         <div class="product-box select-area">
                             <i>
-                                <asp:Image ID="Image12" runat="server" Height="200px" Width="100px" /></i>
+                                <asp:Image ID="Image12" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
                                 <asp:Label ID="Label12" runat="server" Text=""></asp:Label></h3>
                         </div>
@@ -126,25 +125,26 @@
                 <!-- 前一頁 -->
                 <%if (NowPage == 1)
                     {%>
-                <a href="Product.aspx?pageIndex=<%=1 %>"><<</a>
+                <a href="Product.aspx?pageclass=<%=PageClass %>&pageIndex=<%=1 %>"><<</a>
                 <% }
                   else
                     {%>
-                <a href="Product.aspx?pageIndex=<%=(NowPage-1) %>"><<</a>
+                <a href="Product.aspx?pageclass=<%=PageClass %>&pageIndex=<%=(NowPage-1) %>"><<</a>
                 <% }%>
                 <!-- 各頁 -->
                 <%for (int i = 1; i <= PageCount; i++) 
                     {%> 
-                <a href="Product.aspx?pageIndex=<%=i %>"><%= i %></a>
+                <a href="Product.aspx?pageclass=<%=PageClass %>&pageIndex=<%=i %>"><%= i %></a>
                 <% } %>
                 <!-- 後一頁 -->
                 <%if (NowPage == PageCount)
                     {%>
-                <a href="Product.aspx?pageIndex=<%=PageCount %>">>></a>
+                <a href="Product.aspx?pageclass=<%=PageClass %>&pageIndex=<%=PageCount %>">>></a>
                 <% }
                   else
                     {%>
-                <a href="Product.aspx?pageIndex=<%=(NowPage+1) %>">>></a>
+                <a href="Product.aspx?pageclass=<%=PageClass %>&pageIndex=<%=(NowPage+1) %>">>></a>
                 <% }%>
             </div>
+    <asp:Label ID="Label13" runat="server" Text=""></asp:Label>
 </asp:Content>

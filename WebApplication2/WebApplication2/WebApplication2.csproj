@@ -109,14 +109,7 @@
     <Content Include="png\LNIN.png" />
     <Content Include="png\MEYA.png" />
     <Content Include="png\TOYA.png" />
-    <Content Include="Product9.aspx" />
-    <Content Include="Product8.aspx" />
-    <Content Include="Product7.aspx" />
-    <Content Include="Product6.aspx" />
-    <Content Include="Product5.aspx" />
-    <Content Include="Product4.aspx" />
-    <Content Include="Product3.aspx" />
-    <Content Include="Product2.aspx" />
+    <Content Include="Product.aspx" />
     <Content Include="product_pic\C333_1.jpg" />
     <Content Include="product_pic\C333_2.jpg" />
     <Content Include="product_pic\F666_1.jpg" />
@@ -400,7 +393,6 @@
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="Login.aspx" />
-    <Content Include="Product.aspx" />
     <Content Include="product.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -461,62 +453,6 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product9.aspx.cs">
-      <DependentUpon>Product9.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product9.aspx.designer.cs">
-      <DependentUpon>Product9.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product8.aspx.cs">
-      <DependentUpon>Product8.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product8.aspx.designer.cs">
-      <DependentUpon>Product8.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product7.aspx.cs">
-      <DependentUpon>Product7.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product7.aspx.designer.cs">
-      <DependentUpon>Product7.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product6.aspx.cs">
-      <DependentUpon>Product6.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product6.aspx.designer.cs">
-      <DependentUpon>Product6.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product5.aspx.cs">
-      <DependentUpon>Product5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product5.aspx.designer.cs">
-      <DependentUpon>Product5.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product4.aspx.cs">
-      <DependentUpon>Product4.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product4.aspx.designer.cs">
-      <DependentUpon>Product4.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product3.aspx.cs">
-      <DependentUpon>Product3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product3.aspx.designer.cs">
-      <DependentUpon>Product3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product2.aspx.cs">
-      <DependentUpon>Product2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product2.aspx.designer.cs">
-      <DependentUpon>Product2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
