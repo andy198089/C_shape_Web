@@ -23,12 +23,7 @@ namespace WebApplication2
             public int ID { get; set; }
             public string product_type { get; set; }
             public string product_name { get; set; }
-        }
-        [WebMethod]
-        public void Set_ProductType(string x)   //給細項頁面的Session
-        {
-            Session["product_type"] = x;
-        }
+        }        
         protected void Page_Load(object sender, EventArgs e)
         {
             //清除Session
