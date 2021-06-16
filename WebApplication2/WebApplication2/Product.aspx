@@ -1,4 +1,4 @@
-﻿<%@ Page Title="product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="WebApplication2.Product" %>
+﻿<%@ Page Title="Product" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="WebApplication2.Product" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <title>Product</title>
@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="row">
                     <div ID="product_div1" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area" onclick="window.location='http://google.com';">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label1.Text.Split(' ')[0]%>'"> <!--給細項頁面產品資訊 -->
                             <i>
                                 <asp:Image ID="Image1" runat="server" Height="200px" Width="150px" />
                             </i>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div ID="product_div2" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label2.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image2" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <div ID="product_div3" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label3.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image3" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div ID="product_div4" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label3.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image4" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div ID="product_div5" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label5.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image5" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div ID="product_div6" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label6.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image6" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div ID="product_div7" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label7.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image7" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <div ID="product_div8" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label8.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image8" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div ID="product_div9" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label9.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image9" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div ID="product_div10" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label10.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image10" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                     <div ID="product_div11" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label11.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image11" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                     <div ID="product_div12" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area">
+                        <div class="product-box select-area" onclick="location.href='AddProduct.aspx?productclass=<%=PageClass%>&producttype=<%=Label12.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image12" runat="server" Height="200px" Width="150px" /></i>
                             <h3>

@@ -105,7 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.html" />
+    <Content Include="AddProduct.aspx" />
     <Content Include="png\LNIN.png" />
     <Content Include="png\MEYA.png" />
     <Content Include="png\TOYA.png" />
@@ -322,8 +322,6 @@
     <Content Include="UserModify.aspx" />
     <Content Include="Userpage.aspx" />
     <Content Include="Vendor.html" />
-    <Content Include="blog.html" />
-    <Content Include="contact.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -383,7 +381,6 @@
     <Content Include="images\logo.jpg" />
     <Content Include="images\mapimg.jpg" />
     <Content Include="images\pc_layout.png" />
-    <Content Include="index.html" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\custom.js" />
     <Content Include="js\jquery-3.0.0.min.js" />
@@ -393,7 +390,6 @@
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="Login.aspx" />
-    <Content Include="product.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -428,6 +424,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">

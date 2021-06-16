@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
+using System.Web.Services;
 
 namespace WebApplication2
 {
@@ -23,8 +24,17 @@ namespace WebApplication2
             public string product_type { get; set; }
             public string product_name { get; set; }
         }
+        [WebMethod]
+        public void Set_ProductType(string x)   //給細項頁面的Session
+        {
+            Session["product_type"] = x;
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
+            //清除Session
+            Session.Remove("product_class");
+            Session.Remove("product_type");
+
             //dataname_list(內部用)
             List<string> datanames_1 = new List<string>() { };
 
