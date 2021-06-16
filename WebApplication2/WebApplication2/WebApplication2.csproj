@@ -105,7 +105,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddProduct.aspx" />
     <Content Include="png\LNIN.png" />
     <Content Include="png\MEYA.png" />
     <Content Include="png\TOYA.png" />
@@ -319,6 +318,7 @@
     <Content Include="product_pic\TJ-0948_2.jpg" />
     <Content Include="product_pic\TJ-0950_1.jpg" />
     <Content Include="product_pic\TJ-0950_2.jpg" />
+    <Content Include="TestPage.aspx" />
     <Content Include="UserModify.aspx" />
     <Content Include="Userpage.aspx" />
     <Content Include="Vendor.html" />
@@ -424,13 +424,6 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddProduct.aspx.cs">
-      <DependentUpon>AddProduct.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddProduct.aspx.designer.cs">
-      <DependentUpon>AddProduct.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
@@ -471,6 +464,13 @@
     </Compile>
     <Compile Include="Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestPage.aspx.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestPage.aspx.designer.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserModify.aspx.cs">
       <DependentUpon>UserModify.aspx</DependentUpon>

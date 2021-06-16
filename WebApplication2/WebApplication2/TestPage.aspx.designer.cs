@@ -11,7 +11,7 @@ namespace WebApplication2
 {
 
 
-    public partial class AddProduct
+    public partial class TestPage
     {
 
         /// <summary>
