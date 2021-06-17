@@ -26,10 +26,6 @@ namespace WebApplication2
         }        
         protected void Page_Load(object sender, EventArgs e)
         {
-            //清除Session
-            Session.Remove("product_class");
-            Session.Remove("product_type");
-
             //dataname_list(內部用)
             List<string> datanames_1 = new List<string>() { };
 
