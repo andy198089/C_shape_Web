@@ -118,25 +118,27 @@ namespace WebApplication2
                 if (fileException.Equals(".jpg") || fileException.Equals(".png") || fileException.Equals(".jpeg"))
                 {
                     string new_name = TextBox2.Text;
-                    string virpath = "";
+                    string pic_name = "";
                     if (fileException.Equals(".jpg"))
                     {
-                        virpath = path + new_name + "_1.jpg";//這是存到伺服器上的虛擬路徑
+                        pic_name = new_name + "_1.jpg";//這是存到伺服器上的虛擬路徑
                     }
                     else if (fileException.Equals(".png"))
                     {
-                        virpath = path + new_name + "_1.png";
+                        pic_name = new_name + "_1.png";
                     }
                     else if (fileException.Equals(".jpeg"))
                     {
-                        virpath = path + new_name + "_1.jpeg";
+                        pic_name = new_name + "_1.jpeg";
                     }
                     //資料庫存路徑
-                    Session["Img_1"] = virpath;
+                    Session["Img_1"] = pic_name;
+
+                    string virpath = path + pic_name;
                     //string mappath = Server.MapPath(virpath); //轉換成伺服器上的物理路徑
                     //this.FileUpload1.SaveAs(mappath);
                     this.FileUpload1.SaveAs(virpath);
-                    ShowImage_1.ImageUrl = virpath;
+                    ShowImage_1.ImageUrl = $"~/product_pic/{pic_name}";
                     ShowImage_1.Height = 200;
                     ShowImage_1.Width = 150;
                     Response.Write("<script>alert('上傳成功!');</script>");
@@ -159,34 +161,37 @@ namespace WebApplication2
             {
                 string fileException = System.IO.Path.GetExtension(FileUpload2.FileName);
 
-                if (fileException.Equals(".jpg") || fileException.Equals(".png"))
+                if (fileException.Equals(".jpg") || fileException.Equals(".png") || fileException.Equals(".jpeg"))
                 {
                     string new_name = TextBox2.Text;
-                    string virpath = "";
+                    string pic_name_2 = "";
                     if (fileException.Equals(".jpg"))
                     {
-                        virpath = path + new_name + "_2.jpg";//這是存到伺服器上的虛擬路徑
+                        pic_name_2 = new_name + "_2.jpg";//這是存到伺服器上的虛擬路徑
                     }
                     else if (fileException.Equals(".png"))
                     {
-                        virpath = path + new_name + "_2.png";
+                        pic_name_2 = new_name + "_2.png";
                     }
                     else if (fileException.Equals(".jpeg"))
                     {
-                        virpath = path + new_name + "_2.jpeg";
+                        pic_name_2 = new_name + "_2.jpeg";
                     }
                     //資料庫存路徑
-                    Session["Img_2"] = virpath;
-                    //string mappath = Server.MapPath(virpath); //轉換成伺服器上的物理路徑
-                    //this.FileUpload1.SaveAs(mappath);
-                    this.FileUpload1.SaveAs(virpath);
+                    Session["Img_2"] = pic_name_2;
+
+                    string virpath_2 = path + pic_name_2;
+                    //string mappath = Server.MapPath(virpath_2); //轉換成伺服器上的物理路徑
+                    //this.FileUpload1.SaveAs(mappath_2);
+                    this.FileUpload1.SaveAs(virpath_2);
+                    ShowImage_2.ImageUrl = $"~/product_pic/{pic_name_2}";
                     ShowImage_2.Height = 200;
                     ShowImage_2.Width = 150;
                     Response.Write("<script>alert('上傳成功!');</script>");
                 }
                 else
                 {
-                    Response.Write("<script>alert('上傳失敗!僅支持JPG、PNG格式的圖片');</script>");
+                    Response.Write("<script>alert('上傳失敗!僅支持JPG、PNG、JPEG格式的圖片');</script>");
                 }
             }
             else
@@ -289,6 +294,9 @@ namespace WebApplication2
                 TextBox6.Text = "";
                 TextBox7.Text = "";
                 TextBox8.Text = "";
+                ShowImage_1.ImageUrl = "";
+                ShowImage_2.ImageUrl = "";
+
             }
         }
 

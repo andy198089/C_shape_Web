@@ -27,7 +27,7 @@
     <asp:Image ID="Image1" runat="server" Height="200px" Width="150px" ImageUrl="~/product_pic/LA-581A_1.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image2" runat="server" Height="200px" Width="150px" ImageUrl="~/product_pic/LA-581A_2.jpg" /><br />
     <asp:Label ID="Label12" runat="server" Text="圖一須含產品型號和名稱"></asp:Label>&nbsp;&nbsp;&nbsp;<asp:Label ID="Label13" runat="server" Text="圖二"></asp:Label><br />
     <div>
-        <asp:Button ID="Upload_1" runat="server" Text="上傳" onclick="btnUpload_Click1"/><asp:FileUpload ID="FileUpload1" runat="server" />&nbsp;
+        <asp:Button ID="Upload_1" runat="server" Text="上傳" onclick="btnUpload_Click1"/><asp:FileUpload ID="FileUpload1" runat="server" />
         <asp:Button ID="Upload_2" runat="server" Text="上傳" onclick="btnUpload_Click2"/><asp:FileUpload ID="FileUpload2" runat="server" /><br />
         <asp:Image ID="ShowImage_1" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="ShowImage_2" runat="server" />
     </div>
