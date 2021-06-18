@@ -24,8 +24,11 @@
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                             <input class="form-control" id="Text2" type="text" name ="password" placeholder="密碼"/>                                
                         </div>
-                        <div class=" col-md-12">                                
-                            <asp:Button ID="Button1" runat="server" Text="登入" class="send" Width="1200px" OnClick="Button1_Click" /><br />                        
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">                                
+                            <asp:Button ID="Button1" runat="server" Text="登入" class="send" Width="1200px" OnClick="Button1_Click" />                     
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">                                
+                            <asp:Button ID="Button2" runat="server" Text="忘記密碼" class="send" Width="1200px" OnClick="Button2_Click"  /><br />                        
                         </div>
                     </div>
                 </div>

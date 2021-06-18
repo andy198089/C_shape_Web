@@ -81,18 +81,18 @@
                                         <ul class="menu-area-main">
                                             <li><a href="Home.aspx">Home</a> </li>
                                             <li><a href="Vendor.aspx">Vendor</a> </li>
-                                            <li><a href="Product.aspx">product</a> </li>
-                                            <li class="mean-last"><a href="Signup.aspx">signup</a> </li>
+                                            <li class="mean-last"><a href="Product.aspx">product</a> </li>                                            
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                            <li><a class="buy" href="Login.aspx">LOGIN</a></li>                           
+                            <li><asp:Label class="buy select-area" ID="Label1" runat="server" Text="Label" Visible ="False" BackColor="White" Font-Size="Large" ForeColor="Black"></asp:Label></li>
+                            <li><asp:Button class="buy select-area" ID="Button1" runat="server" Text="SIGNUP" BorderColor="White" BorderStyle="None" OnClick="Button1_Click" /></li>
                         </div>
                          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                            <li><asp:Button class="buy select-area" ID="Button2" runat="server" Text="LOGOUT" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
+                            <li><asp:Button class="buy select-area" ID="Button2" runat="server" Text="" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
                         </div>
                     </div>
                 </div>
