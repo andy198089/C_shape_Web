@@ -144,7 +144,7 @@ namespace WebApplication2
                 else
                 {
                     labels[i].Text = product_infs[i+j].product_type+ " "+ product_infs[i+j].product_name;
-                    Images[i].ImageUrl = product_infs[i+j].product_image;
+                    Images[i].ImageUrl = $"~/product_pic/{product_infs[i + j].product_image}";
                 }
             }
         }
