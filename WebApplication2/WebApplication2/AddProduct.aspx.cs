@@ -183,7 +183,7 @@ namespace WebApplication2
                     string virpath_2 = path + pic_name_2;
                     //string mappath = Server.MapPath(virpath_2); //轉換成伺服器上的物理路徑
                     //this.FileUpload1.SaveAs(mappath_2);
-                    this.FileUpload1.SaveAs(virpath_2);
+                    this.FileUpload2.SaveAs(virpath_2);
                     ShowImage_2.ImageUrl = $"~/product_pic/{pic_name_2}";
                     ShowImage_2.Height = 200;
                     ShowImage_2.Width = 150;
