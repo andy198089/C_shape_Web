@@ -15,7 +15,9 @@
                             <asp:Label ID="Label5" runat="server" Text="密碼" ForeColor="Black"></asp:Label><asp:Label ID="Label8" class="form-control" runat="server" ForeColor="Black"></asp:Label>
                             </div>   
                         <div class=" col-md-12">                                
-                            <asp:Button ID="Button1" runat="server" Text="修改密碼" class="send" Width="1200px" OnClick="Button1_Click"  /><br />                   
+                            <asp:Button ID="Button1" runat="server" Text="修改密碼" class="send" Width="1200px" OnClick="Button1_Click"  /><br />
+                            <asp:Label ID="Label9" runat="server" Text="訂單紀錄" ForeColor="Black" Font-Size="XX-Large"></asp:Label><br />
+                            <asp:Label ID="Label10" runat="server" Text="" ForeColor="Black"></asp:Label>
                         </div>                            
                     </div>
                 </div>
