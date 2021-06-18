@@ -15,8 +15,8 @@ namespace WebApplication2
 
         //dataname_list(內部用)
         public List<string> datanames_1 = new List<string>() { };
-        public int Idx;
-        public int last_ID { get; set; }
+        public string Img_1 { get; set; }
+        public string Img_2 { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             string sql_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ProductsConnectionString"].ConnectionString;
@@ -62,13 +62,14 @@ namespace WebApplication2
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int idx = DropDownList1.SelectedIndex - 1; //取得對應的index
-            Idx = idx;
-            if (Idx == (datanames.Count - 2))
+            if (idx == (datanames.Count - 2))
             {
                 TextBox1.Visible = true;
                 Button1.Visible = true;
                 Label14.Visible = true;
             }
+            Session["Idx"] = idx;
+
         }
 
         protected void Create_Table(object sender, EventArgs e)
@@ -85,6 +86,8 @@ namespace WebApplication2
             sqlStr += "牌價 int,";  //牌價
             sqlStr += "售價 int,";  //售價
             sqlStr += "數量 int,";  //數量
+            sqlStr += "image_1 nvarchar(255),";  //image_1的URL
+            sqlStr += "image_2 nvarchar(255),";  //image_2的URL
             sqlStr += " )";
 
             //連線資料庫並創建資料表
@@ -128,6 +131,8 @@ namespace WebApplication2
                     {
                         virpath = path + new_name + "_1.jpeg";
                     }
+                    //資料庫存路徑
+                    Session["Img_1"] = virpath;
                     //string mappath = Server.MapPath(virpath); //轉換成伺服器上的物理路徑
                     //this.FileUpload1.SaveAs(mappath);
                     this.FileUpload1.SaveAs(virpath);
@@ -170,6 +175,8 @@ namespace WebApplication2
                     {
                         virpath = path + new_name + "_2.jpeg";
                     }
+                    //資料庫存路徑
+                    Session["Img_2"] = virpath;
                     //string mappath = Server.MapPath(virpath); //轉換成伺服器上的物理路徑
                     //this.FileUpload1.SaveAs(mappath);
                     this.FileUpload1.SaveAs(virpath);
@@ -192,32 +199,97 @@ namespace WebApplication2
         {
             string sql_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ProductsConnectionString"].ConnectionString;
 
-            SqlConnection connection = new SqlConnection(sql_data);
+            SqlConnection sqlConnection = new SqlConnection(sql_data);
 
-            string product_class = datanames_1[Idx];
+            if (Session["Idx"] == null || (int)Session["Idx"] == 0 || (int)Session["Idx"] == datanames_1.Count)
+            {
+                Response.Write("<script>alert('尚未選擇正確的產品類別!!');</script>");
+            }
+            else
+            {
+                int Idx = (int)Session["Idx"];
+                string product_class = datanames_1[Idx];
 
-            string setsql = $"insert into [{product_class}](型號, 名稱, 規格, 尺寸, 牌價, 售價, 數量) values('{TextBox2.Text}','{TextBox3.Text}','{TextBox4.Text}','{TextBox5.Text}','{TextBox6.Text}','{TextBox7.Text}','{int.Parse(TextBox8.Text)}')";
+                //確認是否已有該商品
+                string product_list = $"[{product_class}]";
+                string sqlstr;
 
-            SqlCommand Command = new SqlCommand(setsql, connection);
+                if (TextBox4.Text == "" && TextBox5.Text=="")
+                {
+                    sqlstr = $"select * from {product_list} where \"型號\"=\'{TextBox2.Text}'";
+                }
+                else if (TextBox4.Text == "")
+                {
+                    sqlstr = $"select * from {product_list} where \"型號\"=\'{TextBox2.Text}' and \"尺寸\"='{TextBox5.Text}'";
+                }
+                else if (TextBox5.Text == "")
+                {
+                    sqlstr = $"select * from {product_list} where \"型號\"=\'{TextBox2.Text}' and \"規格\"='{TextBox4.Text}'";
+                }
+                else
+                {
+                    sqlstr = $"select * from {product_list} where \"型號\"=\'{TextBox2.Text}' and \"規格\"='{TextBox4.Text}' and \"尺寸\"='{TextBox5.Text}'";
+                }                       
 
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(Command);//從Command取得資料存入dataAdapter
+                SqlCommand sqlCommand = new SqlCommand(sqlstr, sqlConnection);
 
-            DataSet dataset = new DataSet();//創一個dataset的記憶體資料集
+                sqlConnection.Open();
 
-            dataAdapter.Fill(dataset);//將dataAdapter資料存入dataset
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
-            //將TextBox清空
-            TextBox2.Text = "";
-            TextBox3.Text = "";
-            TextBox4.Text = "";
-            TextBox5.Text = "";
-            TextBox6.Text = "";
-            TextBox7.Text = "";
-            TextBox8.Text = "";
+                if (sqlDataReader.HasRows)
+                {
+                    sqlConnection.Close();
+                    Response.Write("<script>alert('已有該產品!!');</script>");
+                }
+                else
+                {
+                    sqlConnection.Close();
+                    //無該產品 => 可新增
+                    if (TextBox6.Text == "")
+                    {
+                        TextBox6.Text = "0";
+                    }
+                    if (TextBox7.Text == "")
+                    {
+                        TextBox7.Text = "0";
+                    }
+                    if (TextBox8.Text == "")
+                    {
+                        TextBox8.Text = "0";
+                    }
+                    if(Session["Img_1"] == null)
+                    {
+                        Session["Img_1"] = "";
+                    }
+                    if (Session["Img_2"] == null)
+                    {
+                        Session["Img_2"] = "";
+                    }
+                    Img_1 = Session["Img_1"].ToString();
+                    Img_2 = Session["Img_2"].ToString();
+                    string setsql = $"insert into [{product_class}](型號, 名稱, 規格, 尺寸, 牌價, 售價, 數量, image_1, image_2) values('{TextBox2.Text}',N'{TextBox3.Text}',N'{TextBox4.Text}',N'{TextBox5.Text}','{int.Parse(TextBox6.Text)}','{int.Parse(TextBox7.Text)}','{int.Parse(TextBox8.Text)}','{Img_1}','{Img_2}')";
 
+                    SqlCommand Command = new SqlCommand(setsql, sqlConnection);
 
-            Response.Write("<script>alert('新增成功!');</script>");
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(Command);//從Command取得資料存入dataAdapter
 
+                    DataSet dataset = new DataSet();//創一個dataset的記憶體資料集
+
+                    dataAdapter.Fill(dataset);//將dataAdapter資料存入dataset
+
+                    Response.Write("<script>alert('新增成功!');</script>");
+
+                }
+                //將TextBox清空
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
+                TextBox5.Text = "";
+                TextBox6.Text = "";
+                TextBox7.Text = "";
+                TextBox8.Text = "";
+            }
         }
 
         protected void Button3_Click(object sender, EventArgs e)

@@ -23,6 +23,7 @@ namespace WebApplication2
             public int ID { get; set; }
             public string product_type { get; set; }
             public string product_name { get; set; }
+            public string product_image { get; set; }
         }        
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -95,6 +96,7 @@ namespace WebApplication2
                         ID = (int)sqlDataReader_2["ID"],                        
                         product_type = sqlDataReader_2["型號"].ToString(),
                         product_name = sqlDataReader_2["名稱"].ToString(),
+                        product_image = sqlDataReader_2["image_2"].ToString(),
                     };
                     if (product_infs.Count == 0)
                     {
@@ -142,7 +144,7 @@ namespace WebApplication2
                 else
                 {
                     labels[i].Text = product_infs[i+j].product_type+ " "+ product_infs[i+j].product_name;
-                    Images[i].ImageUrl = $"~/product_pic/{product_infs[i+j].product_type}_2.jpg";
+                    Images[i].ImageUrl = product_infs[i+j].product_image;
                 }
             }
         }

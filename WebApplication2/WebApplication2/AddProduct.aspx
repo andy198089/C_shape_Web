@@ -22,7 +22,7 @@
     <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox><br />
     <asp:Label ID="Label9" runat="server" Text="商品數量"></asp:Label><br />
     <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox><br />
-    <asp:Label ID="Label10" runat="server" Text="商品圖片"></asp:Label><br />
+    <asp:Label ID="Label10" runat="server" Text="商品圖片(需上傳兩種)"></asp:Label><br />
     <asp:Label ID="Label11" runat="server" Text="示意圖"></asp:Label><br />
     <asp:Image ID="Image1" runat="server" Height="200px" Width="150px" ImageUrl="~/product_pic/LA-581A_1.jpg"/>&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image2" runat="server" Height="200px" Width="150px" ImageUrl="~/product_pic/LA-581A_2.jpg" /><br />
     <asp:Label ID="Label12" runat="server" Text="圖一須含產品型號和名稱"></asp:Label>&nbsp;&nbsp;&nbsp;<asp:Label ID="Label13" runat="server" Text="圖二"></asp:Label><br />
