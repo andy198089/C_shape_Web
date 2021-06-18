@@ -108,6 +108,10 @@
     <Content Include="AddProduct.aspx" />
     <Content Include="Change_password.aspx" />
     <Content Include="Forget_password.aspx" />
+    <Content Include="images\New_Logo.jpg" />
+    <Content Include="images\pic1.jpg" />
+    <Content Include="images\pic2.jpg" />
+    <Content Include="images\pic3.jpg" />
     <Content Include="ManagerPage.aspx" />
     <Content Include="png\LNIN.png" />
     <Content Include="png\MEYA.png" />

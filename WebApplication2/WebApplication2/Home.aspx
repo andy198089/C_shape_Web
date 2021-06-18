@@ -8,7 +8,7 @@
 
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="first-slide" src="images/banner2.jpg" alt="First slide">
+                  <img class="first-slide" src="images/pic1.jpg" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>Our <br> <strong class="black_bold">Latest </strong><br>
@@ -20,7 +20,7 @@
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="second-slide" src="images/banner2.jpg" alt="Second slide">
+                  <img class="second-slide" src="images/pic2.jpg" alt="Second slide">
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>Our <br> <strong class="black_bold">Latest </strong><br>
@@ -32,7 +32,7 @@
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="third-slide" src="images/banner2.jpg" alt="Third slide">
+                  <img class="third-slide" src="images/pic3.jpg" alt="Third slide">
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>Our <br> <strong class="black_bold">Latest </strong><br>
