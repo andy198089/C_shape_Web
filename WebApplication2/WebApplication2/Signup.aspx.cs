@@ -27,7 +27,7 @@ namespace WebApplication2
 
                 SqlConnection sqlConnection = new SqlConnection(sql_data);
 
-                string sqlstr_accountCheck = "select * from Users where acount ='" + Request.Form["account"] + "'";
+                string sqlstr_accountCheck = "select * from Users where account ='" + Request.Form["account"] + "'";
 
                 SqlCommand sqlCommand = new SqlCommand(sqlstr_accountCheck, sqlConnection);
 
@@ -43,21 +43,24 @@ namespace WebApplication2
                 else
                 {
                     sqlConnection.Close();
-                    if (Request.Form["password"] != "" && (Request.Form["password"] == Request.Form["password2"]) && Request.Form["userName"] != "")
+                    if (Request.Form["password"] != "" && (Request.Form["password"] == Request.Form["password2"]) && Request.Form["userName"] != "" && Request.Form["email"] != "")
                     {
                         sqlConnection.Open();
-                        string sqlstr = $"insert into [Users](acount,password,userName) values (@acount,@password,@userName)";
+                        string sqlstr = $"insert into [Users](account,password,userName,email) values (@account,@password,@userName,@email)";
 
                         SqlCommand sqlcommand2 = new SqlCommand(sqlstr, sqlConnection);
 
-                        sqlcommand2.Parameters.Add("@acount", SqlDbType.NVarChar);
-                        sqlcommand2.Parameters["@acount"].Value = Request.Form["account"];
+                        sqlcommand2.Parameters.Add("@account", SqlDbType.NVarChar);
+                        sqlcommand2.Parameters["@account"].Value = Request.Form["account"];
 
                         sqlcommand2.Parameters.Add("@password", SqlDbType.NVarChar);
                         sqlcommand2.Parameters["@password"].Value = Request.Form["password"];
 
                         sqlcommand2.Parameters.Add("@userName", SqlDbType.NVarChar);
                         sqlcommand2.Parameters["@userName"].Value = Request.Form["userName"];
+
+                        sqlcommand2.Parameters.Add("@email", SqlDbType.NVarChar);
+                        sqlcommand2.Parameters["@email"].Value = Request.Form["email"];
 
                         sqlcommand2.ExecuteNonQuery();                        
                         Response.Write("<script>alert('帳號註冊成功,請重新登入');location.href='Login.aspx';</script>");
@@ -78,6 +81,11 @@ namespace WebApplication2
                         if (Request.Form["userName"] == "")
                         {
                             Label4.Text = "使用者名稱不可為空";
+                        }
+
+                        if (Request.Form["email"] == "")
+                        {
+                            Label5.Text = "電子信箱不可為空";
                         }
                     }
                 }
