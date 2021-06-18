@@ -30,7 +30,7 @@ namespace WebApplication2
             {
                 string product_class = datanames_1[idx]; //取得對應index的商品系列
                 string product_list = $"[{product_class}]";
-                string sqlstr = $"select * from {product_list}";
+                string sqlstr = $"select [ID],[型號],[名稱],[規格],[尺寸],[牌價],[售價],[數量] from {product_list}";
                 SqlCommand sqlCommand_2 = new SqlCommand(sqlstr, sqlConnection_2);
                 sqlConnection_2.Open();
                 SqlDataAdapter sda = new SqlDataAdapter(sqlCommand_2);
