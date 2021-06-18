@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div ID="product_div4" class="col-xl-3 col-lg-3 col-md-6 col-sm-12" runat="server">
-                        <div class="product-box select-area" onclick="location.href='TestPage.aspx?productclass=<%=PageClass%>&producttype=<%=Label3.Text.Split(' ')[0]%>'">
+                        <div class="product-box select-area" onclick="location.href='TestPage.aspx?productclass=<%=PageClass%>&producttype=<%=Label4.Text.Split(' ')[0]%>'">
                             <i>
                                 <asp:Image ID="Image4" runat="server" Height="200px" Width="150px" /></i>
                             <h3>
