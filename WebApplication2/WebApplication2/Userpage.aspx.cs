@@ -63,6 +63,22 @@ namespace WebApplication2
             {
                 if (sqlDataReader2.Read())
                 {
+                    int count = 0;
+                    string tableName = "";
+                    string tableName_out = "";
+                    string productString = "";
+                    string done = "";
+                    string sum = "";
+
+                    if (Convert.ToInt32(sqlDataReader2["done"]) == 1)
+                    {
+                        done = "訂單完成";
+                    }
+                    else
+                    {
+                        done = "訂單處理中";
+                    }
+
                     string buystr = sqlDataReader2["buy"].ToString().Replace("\"", "");
                     sqlConnection.Close();
 
@@ -71,18 +87,13 @@ namespace WebApplication2
                     SqlConnection sqlConnection2 = new SqlConnection(sql_data2);
 
                     string[] buyList = buystr.Split(',');
-                    int count = 0;
-                    string tableName = "";
-                    string tableName_out = "";
-                    string productString = "";
-                    string sum = "";
                     foreach (var buy in buyList)
                     {
                         count++;
                         if (count % 3 == 1)
                         {
                             tableName = buy;
-                            tableName_out = "系列:" + buy + "   ";
+                            tableName_out = "系列:" + buy + "&nbsp";
                             Label10.Text += tableName_out;
                         }
                         else if (count % 3 == 2)
@@ -99,25 +110,26 @@ namespace WebApplication2
                             {
                                 if (sqlDataReader3.Read())
                                 {
-                                    if (sqlDataReader3["規格"] != null)
+                                    if (sqlDataReader3["規格"] == "")
                                     {
-                                        productString = "名稱:" + sqlDataReader3["名稱"].ToString() + "規格:" + sqlDataReader3["規格"].ToString();
+                                        productString = "名稱:" + sqlDataReader3["名稱"].ToString() + "規格:" + sqlDataReader3["規格"].ToString() + "&nbsp";
                                     }
                                     else
                                     {
-                                        productString = "名稱:" + sqlDataReader3["名稱"].ToString();
+                                        productString = "名稱:" + sqlDataReader3["名稱"].ToString() + "&nbsp";
                                     }
                                 }
                             }
-                            Label10.Text += productString + "   ";
+                            Label10.Text += productString + "&nbsp";
+
+                            sqlConnection2.Close();
                         }
                         else if (count % 3 == 0)
                         {
                             sum = "數量:" + buy;
-                            Label10.Text += sum + "\n";
+                            Label10.Text += sum + "&nbsp" + "&nbsp" + "&nbsp" + done + "<br>";
                         }
                     }
-
                 }
             }
 

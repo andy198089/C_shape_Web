@@ -16,8 +16,8 @@
                             </div>   
                         <div class=" col-md-12">                                
                             <asp:Button ID="Button1" runat="server" Text="修改密碼" class="send" Width="1200px" OnClick="Button1_Click"  /><br />
-                            <asp:Label ID="Label9" runat="server" Text="訂單紀錄" ForeColor="Black" Font-Size="XX-Large"></asp:Label><br />
-                            <asp:Label ID="Label10" runat="server" Text="" ForeColor="Black"></asp:Label>
+                            <asp:Label ID="Label9" runat="server" Text="訂單紀錄" ForeColor="Black" Font-Size="XX-Large"></asp:Label><br /><br />
+                            <asp:Label ID="Label10" runat="server" Text="" ForeColor="Black"></asp:Label><br />
                         </div>                            
                     </div>
                 </div>
