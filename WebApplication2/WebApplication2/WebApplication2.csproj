@@ -114,9 +114,9 @@
     <Content Include="images\pic3.jpg" />
     <Content Include="ManagerPage.aspx" />
     <Content Include="ModifyProduct.aspx" />
-    <Content Include="png\LNIN.png" />
-    <Content Include="png\MEYA.png" />
-    <Content Include="png\TOYA.png" />
+    <Content Include="png\01.png" />
+    <Content Include="png\02.png" />
+    <Content Include="png\03.png" />
     <Content Include="Product.aspx" />
     <Content Include="product_pic\C333_1.jpg" />
     <Content Include="product_pic\C333_2.jpg" />
