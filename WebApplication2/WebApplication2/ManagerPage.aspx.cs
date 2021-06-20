@@ -138,10 +138,12 @@ namespace WebApplication2
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/ModifyProduct.aspx");
         }
     }
-}/* string sqlstr_orders = "select * from Orders ";
+}
+
+/* string sqlstr_orders = "select * from Orders ";
 
 SqlCommand sqlCommand2 = new SqlCommand(sqlstr_orders, sqlConnection);
 

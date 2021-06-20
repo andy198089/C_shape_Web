@@ -113,6 +113,7 @@
     <Content Include="images\pic2.jpg" />
     <Content Include="images\pic3.jpg" />
     <Content Include="ManagerPage.aspx" />
+    <Content Include="ModifyProduct.aspx" />
     <Content Include="png\LNIN.png" />
     <Content Include="png\MEYA.png" />
     <Content Include="png\TOYA.png" />
@@ -485,6 +486,13 @@
     </Compile>
     <Compile Include="ManagerPage.aspx.designer.cs">
       <DependentUpon>ManagerPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyProduct.aspx.cs">
+      <DependentUpon>ModifyProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifyProduct.aspx.designer.cs">
+      <DependentUpon>ModifyProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
