@@ -32,7 +32,6 @@ namespace WebApplication2
                 string product_class = datanames_1[idx]; //取得對應index的商品系列
                 string product_list = $"[{product_class}]";
                 string sqlstr = $"select * from {product_list} where [ID]={id}";
-                Session["Sqlstr"] = sqlstr;
                 Session["Sqlstr_class"] = product_class;
                 Session["id_choose"] = id;
                 SqlCommand sqlCommand_2 = new SqlCommand(sqlstr, sqlConnection_2);
@@ -116,32 +115,39 @@ namespace WebApplication2
 
                 if (fileException.Equals(".jpg") || fileException.Equals(".png") || fileException.Equals(".jpeg"))
                 {
-                    string new_name = Session["org_type"].ToString();
+                    if (Session["org_type"] == null)
+                    {
+                        Response.Write("<script>alert('請先選擇要更改的商品');</script>");
+                    }
+                    else
+                    {
+                        string new_name = Session["org_type"].ToString();
 
-                    string pic_name = "";
-                    if (fileException.Equals(".jpg"))
-                    {
-                        pic_name = new_name + "_1.jpg";//這是存到伺服器上的虛擬路徑
-                    }
-                    else if (fileException.Equals(".png"))
-                    {
-                        pic_name = new_name + "_1.png";
-                    }
-                    else if (fileException.Equals(".jpeg"))
-                    {
-                        pic_name = new_name + "_1.jpeg";
-                    }
-                    //資料庫存路徑
-                    Session["Img_1"] = pic_name;
+                        string pic_name = "";
+                        if (fileException.Equals(".jpg"))
+                        {
+                            pic_name = new_name + "_1.jpg";//這是存到伺服器上的虛擬路徑
+                        }
+                        else if (fileException.Equals(".png"))
+                        {
+                            pic_name = new_name + "_1.png";
+                        }
+                        else if (fileException.Equals(".jpeg"))
+                        {
+                            pic_name = new_name + "_1.jpeg";
+                        }
+                        //資料庫存路徑
+                        Session["Img_1"] = pic_name;
 
-                    string virpath = path + pic_name;
-                    //string mappath = Server.MapPath(virpath); //轉換成伺服器上的物理路徑
-                    //this.FileUpload1.SaveAs(mappath);
-                    this.FileUpload1.SaveAs(virpath);
-                    ShowImage_1.ImageUrl = $"~/product_pic/{pic_name}";
-                    ShowImage_1.Height = 200;
-                    ShowImage_1.Width = 150;
-                    Response.Write("<script>alert('上傳成功!');</script>");
+                        string virpath = path + pic_name;
+                        //string mappath = Server.MapPath(virpath); //轉換成伺服器上的物理路徑
+                        //this.FileUpload1.SaveAs(mappath);
+                        this.FileUpload1.SaveAs(virpath);
+                        ShowImage_1.ImageUrl = $"~/product_pic/{pic_name}";
+                        ShowImage_1.Height = 200;
+                        ShowImage_1.Width = 150;
+                        Response.Write("<script>alert('上傳成功!');</script>");
+                    } 
                 }
                 else
                 {
@@ -163,32 +169,39 @@ namespace WebApplication2
 
                 if (fileException.Equals(".jpg") || fileException.Equals(".png") || fileException.Equals(".jpeg"))
                 {
-                    string new_name = Session["org_type"].ToString();
+                    if (Session["org_type"] == null)
+                    {
+                        Response.Write("<script>alert('請先選擇要更改的商品');</script>");
+                    }
+                    else
+                    {
+                        string new_name = Session["org_type"].ToString();
 
-                    string pic_name_2 = "";
-                    if (fileException.Equals(".jpg"))
-                    {
-                        pic_name_2 = new_name + "_2.jpg";//這是存到伺服器上的虛擬路徑
-                    }
-                    else if (fileException.Equals(".png"))
-                    {
-                        pic_name_2 = new_name + "_2.png";
-                    }
-                    else if (fileException.Equals(".jpeg"))
-                    {
-                        pic_name_2 = new_name + "_2.jpeg";
-                    }
-                    //資料庫存路徑
-                    Session["Img_2"] = pic_name_2;
+                        string pic_name_2 = "";
+                        if (fileException.Equals(".jpg"))
+                        {
+                            pic_name_2 = new_name + "_2.jpg";//這是存到伺服器上的虛擬路徑
+                        }
+                        else if (fileException.Equals(".png"))
+                        {
+                            pic_name_2 = new_name + "_2.png";
+                        }
+                        else if (fileException.Equals(".jpeg"))
+                        {
+                            pic_name_2 = new_name + "_2.jpeg";
+                        }
+                        //資料庫存路徑
+                        Session["Img_2"] = pic_name_2;
 
-                    string virpath_2 = path + pic_name_2;
-                    //string mappath = Server.MapPath(virpath_2); //轉換成伺服器上的物理路徑
-                    //this.FileUpload1.SaveAs(mappath_2);
-                    this.FileUpload2.SaveAs(virpath_2);
-                    ShowImage_2.ImageUrl = $"~/product_pic/{pic_name_2}";
-                    ShowImage_2.Height = 200;
-                    ShowImage_2.Width = 150;
-                    Response.Write("<script>alert('上傳成功!');</script>");
+                        string virpath_2 = path + pic_name_2;
+                        //string mappath = Server.MapPath(virpath_2); //轉換成伺服器上的物理路徑
+                        //this.FileUpload1.SaveAs(mappath_2);
+                        this.FileUpload2.SaveAs(virpath_2);
+                        ShowImage_2.ImageUrl = $"~/product_pic/{pic_name_2}";
+                        ShowImage_2.Height = 200;
+                        ShowImage_2.Width = 150;
+                        Response.Write("<script>alert('上傳成功!');</script>");
+                    }  
                 }
                 else
                 {
@@ -209,7 +222,6 @@ namespace WebApplication2
             }
             else
             {
-                string Sqlstr = Session["Sqlstr"].ToString();
                 string Sqlstr_class = Session["Sqlstr_class"].ToString();
                 int id_choose = (int)Session["id_choose"];
 
