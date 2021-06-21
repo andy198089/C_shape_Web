@@ -15,6 +15,15 @@ namespace WebApplication2
     {
 
         /// <summary>
+        /// Frame1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame1;
+
+        /// <summary>
         /// Image1 控制項。
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace WebApplication2
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Address1;
+
+        /// <summary>
+        /// Frame2 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame2;
 
         /// <summary>
         /// Image2 控制項。
@@ -87,6 +105,15 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Label Address2;
 
         /// <summary>
+        /// Frame3 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame3;
+
+        /// <summary>
         /// Image3 控制項。
         /// </summary>
         /// <remarks>
@@ -121,6 +148,15 @@ namespace WebApplication2
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Address3;
+
+        /// <summary>
+        /// Frame4 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame4;
 
         /// <summary>
         /// Image4 控制項。
@@ -159,6 +195,15 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Label Address4;
 
         /// <summary>
+        /// Frame5 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame5;
+
+        /// <summary>
         /// Image5 控制項。
         /// </summary>
         /// <remarks>
@@ -193,6 +238,15 @@ namespace WebApplication2
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Address5;
+
+        /// <summary>
+        /// Frame6 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame6;
 
         /// <summary>
         /// Image6 控制項。
@@ -231,6 +285,15 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Label Address6;
 
         /// <summary>
+        /// Frame7 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame7;
+
+        /// <summary>
         /// Image7 控制項。
         /// </summary>
         /// <remarks>
@@ -267,6 +330,15 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Label Address7;
 
         /// <summary>
+        /// Frame8 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame8;
+
+        /// <summary>
         /// Image8 控制項。
         /// </summary>
         /// <remarks>
@@ -301,6 +373,15 @@ namespace WebApplication2
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Address8;
+
+        /// <summary>
+        /// Frame9 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Frame9;
 
         /// <summary>
         /// Image9 控制項。

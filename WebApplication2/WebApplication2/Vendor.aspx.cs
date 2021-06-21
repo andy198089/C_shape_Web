@@ -24,17 +24,20 @@ namespace WebApplication2
 
             List<Label> Addresses = new List<Label>() { Address1, Address2, Address3, Address4, Address5, Address6, Address7, Address8, Address9 };
 
+            List<HtmlGenericControl> Frames = new List<HtmlGenericControl>() { Frame1, Frame2, Frame3, Frame4, Frame5, Frame6, Frame7, Frame8, Frame9 };
+
             string v_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["VendorConnectionString"].ConnectionString;
 
             SqlConnection connection = new SqlConnection(v_data);
 
-            string sqlVendor = "select jpg,name,phone,address from vendor order by no";
+            string sqlVendor = "select jpg,name,phone,address,no from vendor";
 
             SqlCommand Command = new SqlCommand(sqlVendor, connection);
 
             connection.Open();
 
             SqlDataReader Reader = Command.ExecuteReader();
+
 
             if (Reader.HasRows)
             {
@@ -46,6 +49,10 @@ namespace WebApplication2
                         Names[i].Text = Reader[1].ToString();
                         Phones[i].Text = Reader[2].ToString();
                         Addresses[i].Text = Reader[3].ToString();
+                    }
+                    else
+                    {
+                        Frames[i].Style["display"] = "none";
                     }
                 }
                 connection.Close();
