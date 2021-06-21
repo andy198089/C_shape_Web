@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                            <li><asp:Label class="buy select-area" ID="Label1" runat="server" Text="Label" Visible ="False" BackColor="White" Font-Size="Large" ForeColor="Black"></asp:Label></li>
+                            <li><asp:Label class="buy" ID="Label1" runat="server" Text="Label" Visible ="False" BackColor="White" Font-Size="Large" ForeColor="Black"></asp:Label></li>
                             <li><asp:Button class="buy select-area" ID="Button1" runat="server" Text="SIGNUP" BorderColor="White" BorderStyle="None" OnClick="Button1_Click" /></li>
                         </div>
                          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
