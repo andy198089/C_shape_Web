@@ -11,8 +11,7 @@
                   <img class="first-slide" src="images/pic_1.jpg" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Our <br> <strong class="black_bold">Latest </strong><br>
-                           <strong class="yellow_bold">Product </strong></h1>                        
+                        <h1>Our <br><strong class="yellow_bold">Product </strong></h1>                        
                         <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
@@ -21,8 +20,7 @@
                   <img class="second-slide" src="images/pic_2.jpg" alt="Second slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Our <br> <strong class="black_bold">Latest </strong><br>
-                           <strong class="yellow_bold">Product </strong></h1>
+                        <h1>Our <br><strong class="yellow_bold">Product </strong></h1>
                         <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
@@ -31,8 +29,7 @@
                   <img class="third-slide" src="images/pic_3.jpg" alt="Third slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Our <br> <strong class="black_bold">Latest </strong><br>
-                           <strong class="yellow_bold">Product </strong></h1>
+                        <h1>Our <br><strong class="yellow_bold">Product </strong></h1>
                         <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
