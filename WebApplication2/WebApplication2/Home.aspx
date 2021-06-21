@@ -12,9 +12,7 @@
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>Our <br> <strong class="black_bold">Latest </strong><br>
-                           <strong class="yellow_bold">Product </strong></h1>
-                        <p>It is a long established fact that a r <br>
-                          eader will be distracted by the readable content of a page </p>
+                           <strong class="yellow_bold">Product </strong></h1>                        
                         <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
@@ -25,8 +23,6 @@
                      <div class="carousel-caption relative">
                         <h1>Our <br> <strong class="black_bold">Latest </strong><br>
                            <strong class="yellow_bold">Product </strong></h1>
-                        <p>It is a long established fact that a r <br>
-                          eader will be distracted by the readable content of a page </p>
                         <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
@@ -37,8 +33,6 @@
                      <div class="carousel-caption relative">
                         <h1>Our <br> <strong class="black_bold">Latest </strong><br>
                            <strong class="yellow_bold">Product </strong></h1>
-                        <p>It is a long established fact that a r <br>
-                          eader will be distracted by the readable content of a page </p>
                         <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
