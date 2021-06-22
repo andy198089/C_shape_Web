@@ -129,7 +129,7 @@ namespace WebApplication2
             sqlConnection.Open();
 
             sqlCommand.Parameters.Add("@done", SqlDbType.NVarChar);
-            sqlCommand.Parameters["@done"].Value = 0;
+            sqlCommand.Parameters["@done"].Value = 1;
 
             sqlCommand.ExecuteNonQuery();
             sqlConnection.Close();
