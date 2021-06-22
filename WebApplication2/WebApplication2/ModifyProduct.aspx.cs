@@ -231,44 +231,108 @@ namespace WebApplication2
 
                 //資料行名稱+value
                 string sql_update = "SET ";
-
+                int count = 0;
                 if (TextBox2.Text != "")
                 {
                     sql_update += $"[型號]=N'{TextBox2.Text}'";
+                    count++;
                 }
                 if (TextBox3.Text != "")
                 {
-                    sql_update += $",[名稱]=N'{TextBox3.Text}'";
+                    if(count > 0)
+                    {
+                        sql_update += $",[名稱]=N'{TextBox3.Text}'";
+                    }
+                    else
+                    {
+                        sql_update += $"[名稱]=N'{TextBox3.Text}'";
+                        count++;
+                    }  
                 }
                 if (TextBox4.Text != "")
                 {
-                    sql_update += $",[規格]=N'{TextBox4.Text}'";
+                    if (count > 0)
+                    {
+                        sql_update += $",[規格]=N'{TextBox4.Text}'";
+                    }
+                    else
+                    {
+                        sql_update += $"[規格]=N'{TextBox4.Text}'";
+                        count++;
+                    }     
                 }
                 if (TextBox5.Text != "")
                 {
-                    sql_update += $",[尺寸]=N'{TextBox5.Text}'";
+                    if (count > 0)
+                    {
+                        sql_update += $",[尺寸]=N'{TextBox5.Text}'";
+                    }
+                    else
+                    {
+                        sql_update += $"[尺寸]=N'{TextBox5.Text}'";
+                        count++;
+                    }  
                 }
                 if (TextBox6.Text != "")
                 {
-                    sql_update += $",[牌價]='{int.Parse(TextBox6.Text)}'";
+                    if (count > 0)
+                    {
+                        sql_update += $",[牌價]='{int.Parse(TextBox6.Text)}'";
+                    }
+                    else
+                    {
+                        sql_update += $"[牌價]='{int.Parse(TextBox6.Text)}'";
+                        count++;
+                    }
                 }
                 if (TextBox7.Text != "")
                 {
-                    sql_update += $",[售價]='{int.Parse(TextBox7.Text)}'";
+                    if (count > 0)
+                    {
+                        sql_update += $",[售價]='{int.Parse(TextBox7.Text)}'";
+                    }
+                    else
+                    {
+                        sql_update += $"[售價]='{int.Parse(TextBox7.Text)}'";
+                        count++;
+                    }
                 }
                 if (TextBox8.Text != "")
                 {
-                    sql_update += $",[數量]='{int.Parse(TextBox8.Text)}'";
+                    if (count > 0)
+                    {
+                        sql_update += $",[數量]='{int.Parse(TextBox8.Text)}'";
+                    }
+                    else
+                    {
+                        sql_update += $"[數量]='{int.Parse(TextBox8.Text)}'";
+                        count++;
+                    }
                 }
                 if (Session["Img_1"] != null)
                 {
                     Img_1 = Session["Img_1"].ToString();
-                    sql_update += $",[image_1]='{Img_1}'";
+                    if (count > 0)
+                    {
+                        sql_update += $",[image_1]='{Img_1}'";
+                    }
+                    else
+                    {
+                        sql_update += $"[image_1]='{Img_1}'";
+                        count++;
+                    }
                 }
                 if (Session["Img_2"] != null)
                 {
                     Img_2 = Session["Img_2"].ToString();
-                    sql_update += $",[image_2]='{Img_2}'";
+                    if (count > 0)
+                    {
+                        sql_update += $",[image_2]='{Img_2}'";
+                    }
+                    else
+                    {
+                        sql_update += $"[image_2]='{Img_2}'";
+                    }
                 }
 
                 string updatesql = $"update [{Sqlstr_class}]{sql_update} where ID = {id_choose}";

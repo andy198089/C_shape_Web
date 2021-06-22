@@ -18,7 +18,7 @@
     <asp:Label ID="Label7" runat="server" Text="牌價："></asp:Label><asp:TextBox ID="TextBox6" runat="server"></asp:TextBox><br />
     <asp:Label ID="Label8" runat="server" Text="售價："></asp:Label><asp:TextBox ID="TextBox7" runat="server"></asp:TextBox><br />
     <asp:Label ID="Label9" runat="server" Text="數量："></asp:Label><asp:TextBox ID="TextBox8" runat="server"></asp:TextBox><br />
-    <asp:Button ID="Button2" runat="server" Text="修改" OnClick="Button2_Click" />&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" Text="取消" OnClick="Button3_Click" /><br />
+    <asp:Button ID="Button2" runat="server" Text="修改" OnClick="Button2_Click" /><br />
     <asp:Label ID="Label17" runat="server" Text="修改圖片只需上傳便可修改" ForeColor="Black" Font-Size="Large"></asp:Label><br />
     <asp:Label ID="Label10" runat="server" Text="商品圖片(需上傳兩種)"></asp:Label><br />
     <asp:Label ID="Label11" runat="server" Text="示意圖"></asp:Label><br />
@@ -29,4 +29,5 @@
         <asp:Button ID="Upload_2" runat="server" Text="上傳" onclick="btnUpload_Click2"/><asp:FileUpload ID="FileUpload2" runat="server" /><br />
         <asp:Image ID="ShowImage_1" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="ShowImage_2" runat="server" />
     </div><br />
+    <asp:Button ID="Button3" runat="server" Text="回上一頁" OnClick="Button3_Click" />
 </asp:Content>
