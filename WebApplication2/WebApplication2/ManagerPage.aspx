@@ -28,6 +28,10 @@
         </asp:GridView>
     </div>
     <br />
+<<<<<<< HEAD
     <asp:Button ID="Button1" runat="server" Text="新增商品" OnClick="Button1_Click" /><asp:Button ID="Button2" runat="server" Text="更新商品" OnClick="Button2_Click" /><br />
+=======
+    <asp:Button ID="Button1" runat="server" Text="新增商品" OnClick="Button1_Click" />&nbsp;&nbsp;<asp:Button ID="Button2" runat="server" Text="更新商品" OnClick="Button2_Click" /><br />
+>>>>>>> parent of f542af8 (2021/6/21 by 晉文)
     <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label><br />
 </asp:Content>
