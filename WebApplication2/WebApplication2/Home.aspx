@@ -8,38 +8,29 @@
 
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="first-slide" src="images/pic1.jpg" alt="First slide">
+                  <img class="first-slide" src="images/pic_1.jpg" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Our <br> <strong class="black_bold">Latest </strong><br>
-                           <strong class="yellow_bold">Product </strong></h1>
-                        <p>It is a long established fact that a r <br>
-                          eader will be distracted by the readable content of a page </p>
-                        <a  href="#">see more Products</a>
+                        <h1>Our <br><strong class="yellow_bold">Product </strong></h1>                        
+                        <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="second-slide" src="images/pic2.jpg" alt="Second slide">
+                  <img class="second-slide" src="images/pic_2.jpg" alt="Second slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Our <br> <strong class="black_bold">Latest </strong><br>
-                           <strong class="yellow_bold">Product </strong></h1>
-                        <p>It is a long established fact that a r <br>
-                          eader will be distracted by the readable content of a page </p>
-                        <a  href="#">see more Products</a>
+                        <h1>Our <br><strong class="yellow_bold">Product </strong></h1>
+                        <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="third-slide" src="images/pic3.jpg" alt="Third slide">
+                  <img class="third-slide" src="images/pic_3.jpg" alt="Third slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Our <br> <strong class="black_bold">Latest </strong><br>
-                           <strong class="yellow_bold">Product </strong></h1>
-                        <p>It is a long established fact that a r <br>
-                          eader will be distracted by the readable content of a page </p>
-                        <a  href="#">see more Products</a>
+                        <h1>Our <br><strong class="yellow_bold">Product </strong></h1>
+                        <a  href="Product.aspx">see more Products</a>
                      </div>
                   </div>
                </div>

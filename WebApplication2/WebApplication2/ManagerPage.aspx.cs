@@ -17,10 +17,14 @@ namespace WebApplication2
         //dataname_list(內部用)
         public List<string> datanames_1 = new List<string>() { };
         public int Idx;
+
+        //訂單總覽用
+        public List<string> order_list = new List<string>() { "請選擇", "已處理", "未處理"};
+
         public void BindGrid(int idx)  //商品呈現於Grid表格中
         {
             string sql_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ProductsConnectionString"].ConnectionString;
-            SqlConnection sqlConnection_2 = new SqlConnection(sql_data);
+            SqlConnection sqlConnection_1 = new SqlConnection(sql_data);
             if (idx < 0)
             {
                 GridView1.DataSource = null;
@@ -31,15 +35,15 @@ namespace WebApplication2
                 string product_class = datanames_1[idx]; //取得對應index的商品系列
                 string product_list = $"[{product_class}]";
                 string sqlstr = $"select [ID],[型號],[名稱],[規格],[尺寸],[牌價],[售價],[數量] from {product_list}";
-                SqlCommand sqlCommand_2 = new SqlCommand(sqlstr, sqlConnection_2);
-                sqlConnection_2.Open();
-                SqlDataAdapter sda = new SqlDataAdapter(sqlCommand_2);
+                SqlCommand sqlCommand_1 = new SqlCommand(sqlstr, sqlConnection_1);
+                sqlConnection_1.Open();
+                SqlDataAdapter sda = new SqlDataAdapter(sqlCommand_1);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 GridView1.DataSource = dt;
                 GridView1.DataBind();
             }
-            sqlConnection_2.Close();
+            sqlConnection_1.Close();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -72,6 +76,11 @@ namespace WebApplication2
                 this.DropDownList1.DataSource = datanames;
                 this.DropDownList1.DataBind();
                 this.DropDownList1.Style["display"] = "none"; //將舊樣式的隱藏起來
+
+                //訂單list填入下拉式選單
+                this.DropDownList2.DataSource = order_list;
+                this.DropDownList2.DataBind();
+                this.DropDownList2.Style["display"] = "none"; //將舊樣式的隱藏起來
             }
         }
 
@@ -101,8 +110,7 @@ namespace WebApplication2
                         e.Row.ForeColor = System.Drawing.Color.Black;
                     }
                 }
-            }
-            
+            }  
         }
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
@@ -138,8 +146,9 @@ namespace WebApplication2
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/ModifyProduct.aspx");
         }
+<<<<<<< HEAD
     }
 }/* string sqlstr_orders = "select * from Orders ";
 
@@ -149,65 +158,52 @@ SqlCommand sqlCommand2 = new SqlCommand(sqlstr_orders, sqlConnection);
 sqlConnection.Open();
 
 SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
+=======
+>>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
 
-if (sqlDataReader2.HasRows)
-{
-    if (sqlDataReader2.Read())
-    {
-        string buystr = sqlDataReader2["buy"].ToString().Replace("\"", "");
-        sqlConnection.Close();
+        //訂單總覽
 
-        string sql_data2 = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ProductsConnectionString"].ConnectionString;
-
-        SqlConnection sqlConnection2 = new SqlConnection(sql_data2);
-
-        string[] buyList = buystr.Split(',');
-        int count = 0;
-        string tableName = "";
-        string tableName_out = "";
-        string productString = "";
-        string sum = "";
-        foreach (var buy in buyList)
+        public void BindGrid_2(int idx)  //商品呈現於Grid表格中
         {
-            count++;
-            if (count % 3 == 1)
+            string sql_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["AcountConnectionString"].ConnectionString;
+            SqlConnection sqlConnection_2 = new SqlConnection(sql_data);
+            string sqlstr = $"select * from Orders where done = {idx}";
+            SqlCommand sqlCommand_2 = new SqlCommand(sqlstr, sqlConnection_2);
+            sqlConnection_2.Open();
+            SqlDataAdapter sda = new SqlDataAdapter(sqlCommand_2);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dt.Columns.Add("細項連結");
+            GridView2.DataSource = dt;
+            GridView2.DataBind();
+
+            sqlConnection_2.Close();
+        }
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idx = DropDownList2.SelectedIndex - 1; //取得對應的index
+            if(idx == -1)
             {
-                tableName = buy;
-                tableName_out = "系列:" + buy + "   ";
-                Label10.Text += tableName_out;
+                Response.Write("<script>alert('請選擇正確的選項')</script>");
             }
-            else if (count % 3 == 2)
+            else
             {
-                string sqlstr_products = "select * from " + tableName + " where ID = '" + buy + "'";
-
-                SqlCommand sqlCommand3 = new SqlCommand(sqlstr_products, sqlConnection2);
-
-                sqlConnection2.Open();
-
-                SqlDataReader sqlDataReader3 = sqlCommand3.ExecuteReader();
-
-                if (sqlDataReader3.HasRows)
-                {
-                    if (sqlDataReader3.Read())
-                    {
-                        if (sqlDataReader3["規格"] != null)
-                        {
-                            productString = "名稱:" + sqlDataReader3["名稱"].ToString() + "規格:" + sqlDataReader3["規格"].ToString();
-                        }
-                        else
-                        {
-                            productString = "名稱:" + sqlDataReader3["名稱"].ToString();
-                        }
-                    }
-                }
-                Label10.Text += productString + "   ";
+                BindGrid_2(idx);
             }
-            else if (count % 3 == 0)
+            Label5.Text = idx + "";
+        }
+
+        protected void GridView2_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if ((e.Row.RowType == DataControlRowType.DataRow))
             {
-                sum = "數量:" + buy;
-                Label10.Text += sum + "\n";
+                HyperLink hyperLink = new HyperLink();
+                hyperLink.Text = "去處理";
+                hyperLink.NavigateUrl = $"item_overview.aspx?orderid={e.Row.Cells[0].Text}";
+                e.Row.Cells[5].Controls.Add(hyperLink);
             }
         }
+<<<<<<< HEAD
 
 =======
         //訂單總覽
@@ -342,5 +338,7 @@ if (sqlDataReader2.HasRows)
             }
         }*/
 >>>>>>> parent of f542af8 (2021/6/21 by 晉文)
+=======
+>>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
     }
-}*/
+}

@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Introduction.css">
-
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
@@ -38,7 +36,8 @@
         <!-- loader  -->
         <div class="loader_bg">
             <div class="loader">
-                <img src="images/loading.gif" alt="#" /></div>
+                <img src="images/loading.gif" alt="#" />
+            </div>
         </div>
         <!-- end loader -->
         <!-- header -->
@@ -59,9 +58,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="top-box"  style="text-align:right;">
-                                    <p ><a href="Userpage.aspx" style="font-size: x-large; font-weight: bold">會員專區</a> </p>
-                                </div>
+                                <div class="top-box" style="text-align: right;"></div>
                             </div>
                         </div>
                     </div>
@@ -71,8 +68,10 @@
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                             <div class="full">
                                 <div class="center-desk">
-                                    <div class="logo"><a href="Home.aspx">
-                                        <img src="images/New_logo.jpg" alt="logo" /></a> </div>
+                                    <div class="logo">
+                                        <a href="Home.aspx">
+                                            <img src="images/New_logo.jpg" alt="logo" /></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -81,20 +80,23 @@
                                 <div class="limit-box">
                                     <nav class="main-menu">
                                         <ul class="menu-area-main">
-                                            <li><a href="Home.aspx">Home</a> </li>
+                                            <li><a href="Userpage.aspx">會員專區</a> </li>
                                             <li><a href="Vendor.aspx">Vendor</a> </li>
-                                            <li class="mean-last"><a href="Product.aspx">product</a> </li>                                            
+                                            <li class="mean-last"><a href="Product.aspx">product</a> </li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                            <li><asp:Label class="buy select-area" ID="Label1" runat="server" Text="Label" Visible ="False" BackColor="White" Font-Size="Large" ForeColor="Black"></asp:Label></li>
-                            <li><asp:Button class="buy select-area" ID="Button1" runat="server" Text="SIGNUP" BorderColor="White" BorderStyle="None" OnClick="Button1_Click" /></li>
+                            <li>
+                                <asp:Label class="buy" ID="Label1" runat="server" Text="Label" Visible="False" BackColor="White" Font-Size="Large" ForeColor="Black"></asp:Label></li>
+                            <li>
+                                <asp:Button class="buy select-area" ID="Button1" runat="server" Text="SIGNUP" BorderColor="White" BorderStyle="None" OnClick="Button1_Click" /></li>
                         </div>
-                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                            <li><asp:Button class="buy select-area" ID="Button2" runat="server" Text="" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                            <li>
+                                <asp:Button class="buy select-area" ID="Button2" runat="server" Text="" OnClick="Button2_Click" BorderColor="White" BorderStyle="None" /></li>
                         </div>
                     </div>
                 </div>
@@ -124,39 +126,32 @@
             <div class="row">
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                   <div class="contact">
-                     <h3>conatct us</h3>
-                     <span>123 Second Street Fifth Avenue,<br>
-                       Manhattan, New York<br>
-                        +987 654 3210</span>
+                     <h3>about us</h3>
+                     <span>新竹班 第二組<br>
+                        105267865 陳晉文<br>
+                        105223121 余兆華<br>
+                        1493123002 鄭翔允<br>
+                        105332376 陳俊元</span>
                   </div>
                </div>
                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                   <div class="contact">
-                     <h3>ADDITIONAL LINKS</h3>
+                     <h3>made of</h3>
                      <ul class="lik">
-                         <li> <a href="#">About us</a></li>
-                         <li> <a href="#">Terms and conditions</a></li>
-                         <li> <a href="#">Privacy policy</a></li>
-                         <li> <a href="#">News</a></li>
-                          <li> <a href="#">Contact us</a></li>
+                         <li>Language：C#</li>
+                         <li>System medol：ASP.NET Web From</li>
+                         <li><a href="https://www.free-css.com/free-css-templates/page261/lighten">Layout：Lighten</a></li>
+                         <li>Client side：HTML、JavaScript、jQuery</li>
+                         <li>Server side：MS SQL (Use by SSMS)、Microsoft Azure</li>
+                         <li>UI：ASP.NET Web Control</li>
                      </ul>
                   </div>
-               </div>
+               </div>                 
                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                   <div class="contact">
-                     <h3>service</h3>
-                      <ul class="lik">
-                    <li> <a href="#"> Data recovery</a></li>
-                         <li> <a href="#">Computer repair</a></li>
-                         <li> <a href="#">Mobile service</a></li>
-                         <li> <a href="#">Network solutions</a></li>
-                          <li> <a href="#">Technical support</a></li>
-                  </div>
-               </div>
-                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <div class="contact">
-                     <h3>About lighten</h3>
-                     <span>Tincidunt elit magnis nulla facilisis. Dolor Sapien nunc amet ultrices, </span>
+                     <h3>About lccnet C# class</h3>
+                     <span>Class time：2021/4/8 ~ 2021/6/25<br>
+                     </span>
                   </div>
                </div>
             </div>
