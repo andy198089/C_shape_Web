@@ -85,7 +85,7 @@ namespace WebApplication2
                 {
                     sum = Convert.ToInt32(buy);
                     dr["ID"] = itemID;
-                    dr["系列"] = tableName.Replace("$", "");
+                    dr["系列"] = tableName.Replace("$", "").Replace("'", "");
                     dr["型號"] = model;
                     dr["名稱"] = productName;
                     dr["規格"] = size;

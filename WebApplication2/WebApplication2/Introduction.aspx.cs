@@ -130,6 +130,10 @@ namespace WebApplication2
             {
                 Response.Write("<script>alert('請選擇正確的商品')</script>");
             }
+            else if (TextBox1.Text == "")
+            {
+                Response.Write("<script>alert('請輸入要購買的數量')</script>");
+            }
             else if (int.Parse(TextBox1.Text) > (int)Session["product_count"])
             {
                 Response.Write("<script>alert('超過所能購買的數量!!請重新輸入')</script>");
