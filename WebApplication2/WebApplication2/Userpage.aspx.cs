@@ -101,7 +101,7 @@ namespace WebApplication2
 
             if (sqlDataReader3.HasRows)
             {
-                if (sqlDataReader3.Read())
+                while (sqlDataReader3.Read())
                 {
                     buystr += sqlDataReader3["buy"].ToString().Replace("\"", "");
                     if (sqlDataReader3["done"].ToString() == "0")
@@ -128,7 +128,7 @@ namespace WebApplication2
             dt.Columns.Add("數量");
             dt.Columns.Add("進度");
             foreach (var buy in buyList)
-            {                
+            {
                 count++;
                 DataRow dr = dt.NewRow();
                 if (count % 3 == 1)
@@ -138,7 +138,7 @@ namespace WebApplication2
                 }
                 else if (count % 3 == 2)
                 {
-                    string sqlstr_products = "select * from " + tableName + " where ID = " + buy;
+                    string sqlstr_products = "select * from [" + tableName + "] where ID = " + buy;
 
                     SqlCommand sqlCommand3 = new SqlCommand(sqlstr_products, sqlConnection2);
 

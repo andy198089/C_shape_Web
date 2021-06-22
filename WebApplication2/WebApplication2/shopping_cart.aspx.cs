@@ -11,19 +11,20 @@ namespace WebApplication2
 {
     public partial class shopping_cart : System.Web.UI.Page
     {
+        string buystr = "";
+        string tableName = "";
+        int itemID = 0;
+        string model = "";
+        string productName = "";
+        string size = "";
+        string large = "";
+        int price = 0;
+        int sum = 0;
+        int row = 0;
+        string[] buyList = { };
+        int count = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            string buystr = "";
-            string tableName = "";
-            int itemID = 0;
-            string model = "";
-            string productName = "";
-            string size = "";
-            string large = "";
-            int price = 0;
-            int sum = 0;
-            int row = 0;
-
             ViewState["submittimes"] = Convert.ToInt32(ViewState["submittimes"]) + 1;
             if (!Page.IsPostBack)
             {
@@ -35,9 +36,8 @@ namespace WebApplication2
 
             SqlConnection sqlConnection = new SqlConnection(sql_data);
 
-            string[] buyList = Session["buyorder"].ToString().Split(',');
+            buyList = Session["buyorder"].ToString().Split(',');
 
-            int count = 0;
             DataTable dt = new DataTable();
             dt.Columns.Add("ID");
             dt.Columns.Add("系列");
@@ -123,8 +123,61 @@ namespace WebApplication2
             sqlCommamd.Parameters["@done"].Value = 0;
 
             sqlCommamd.ExecuteNonQuery();
-            Response.Write("<script>alert('訂購完成');location.href='shopping_cart.aspx';</script>");
             sqlConnection.Close();
+
+            int num = 0;
+
+            sql_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ProductsConnectionString"].ConnectionString;
+
+            SqlConnection sqlConnection2 = new SqlConnection(sql_data);
+
+            count = 0;
+
+            foreach (var buy in buyList)
+            {
+                count++;
+                if (count % 3 == 1)
+                {
+                    tableName = buy;
+                }
+                if (count % 3 == 2)
+                {
+                    string sqlstr_products = "select * from [" + tableName + "] where ID = " + buy;
+
+                    SqlCommand sqlCommand = new SqlCommand(sqlstr_products, sqlConnection2);
+
+                    sqlConnection2.Open();
+
+                    SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+                    if (sqlDataReader.HasRows)
+                    {
+                        if (sqlDataReader.Read())
+                        {
+                            itemID = Convert.ToInt32(sqlDataReader["ID"]);
+                            num = Convert.ToInt32(sqlDataReader["數量"]);
+                        }
+                    }
+                    sqlConnection2.Close();
+                }
+                if (count % 3 == 0)
+                {
+                    num = num - sum;
+
+                    string sqlstr_change = "update [" + tableName + "] set 數量 = @數量 where id = " + itemID;
+
+                    SqlCommand sqlCommand2 = new SqlCommand(sqlstr_change, sqlConnection2);
+
+                    sqlConnection2.Open();
+
+                    sqlCommand2.Parameters.Add("@數量", SqlDbType.Int);
+                    sqlCommand2.Parameters["@數量"].Value = num;
+
+                    sqlCommand2.ExecuteNonQuery();
+                    sqlConnection.Close();
+                }
+            }
+            Response.Write("<script>alert('訂購完成');location.href='shopping_cart.aspx';</script>");
 
             Session["buyorder"] = "";
         }
