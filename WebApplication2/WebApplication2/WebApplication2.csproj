@@ -112,6 +112,7 @@
     <Content Include="images\pic_1.jpg" />
     <Content Include="images\pic_2.jpg" />
     <Content Include="images\pic_3.jpg" />
+    <Content Include="Introduction.aspx" />
     <Content Include="item_overview.aspx" />
     <Content Include="ManagerPage.aspx" />
     <Content Include="ModifyProduct.aspx" />
@@ -467,6 +468,13 @@
     </Compile>
     <Compile Include="index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Introduction.aspx.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Introduction.aspx.designer.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
     </Compile>
     <Compile Include="item_overview.aspx.cs">
       <DependentUpon>item_overview.aspx</DependentUpon>
