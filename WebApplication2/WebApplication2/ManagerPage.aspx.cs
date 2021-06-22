@@ -149,6 +149,7 @@ namespace WebApplication2
             Response.Redirect("~/ModifyProduct.aspx");
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 }/* string sqlstr_orders = "select * from Orders ";
 
@@ -158,6 +159,8 @@ SqlCommand sqlCommand2 = new SqlCommand(sqlstr_orders, sqlConnection);
 sqlConnection.Open();
 
 SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
+=======
+>>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
 =======
 >>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
 
@@ -176,6 +179,7 @@ SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
             dt.Columns.Add("細項連結");
             GridView2.DataSource = dt;
             GridView2.DataBind();
+<<<<<<< HEAD
 
             sqlConnection_2.Close();
         }
@@ -339,6 +343,35 @@ SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
         }*/
 >>>>>>> parent of f542af8 (2021/6/21 by 晉文)
 =======
+>>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
+=======
+
+            sqlConnection_2.Close();
+        }
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idx = DropDownList2.SelectedIndex - 1; //取得對應的index
+            if(idx == -1)
+            {
+                Response.Write("<script>alert('請選擇正確的選項')</script>");
+            }
+            else
+            {
+                BindGrid_2(idx);
+            }
+            Label5.Text = idx + "";
+        }
+
+        protected void GridView2_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if ((e.Row.RowType == DataControlRowType.DataRow))
+            {
+                HyperLink hyperLink = new HyperLink();
+                hyperLink.Text = "去處理";
+                hyperLink.NavigateUrl = $"item_overview.aspx?orderid={e.Row.Cells[0].Text}";
+                e.Row.Cells[5].Controls.Add(hyperLink);
+            }
+        }
 >>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
     }
 }
