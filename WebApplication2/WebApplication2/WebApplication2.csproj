@@ -328,6 +328,7 @@
     <Content Include="product_pic\TJ-0948_2.jpg" />
     <Content Include="product_pic\TJ-0950_1.jpg" />
     <Content Include="product_pic\TJ-0950_2.jpg" />
+    <Content Include="shopping_cart.aspx" />
     <Content Include="TestPage.aspx" />
     <Content Include="UserModify.aspx" />
     <Content Include="Userpage.aspx" />
@@ -503,6 +504,13 @@
       <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shopping_cart.aspx.cs">
+      <DependentUpon>shopping_cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopping_cart.aspx.designer.cs">
+      <DependentUpon>shopping_cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
