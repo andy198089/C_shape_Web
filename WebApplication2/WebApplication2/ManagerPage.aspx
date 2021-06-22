@@ -34,6 +34,4 @@
     <div>
         <asp:GridView ID="GridView2" runat="server" OnRowDataBound="GridView2_RowDataBound"></asp:GridView>
     </div>
-    <br />
-    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
 </asp:Content>

@@ -17,9 +17,10 @@ namespace WebApplication2
         //dataname_list(內部用)
         public List<string> datanames_1 = new List<string>() { };
         public int Idx;
+        public int Idx_2;
 
         //訂單總覽用
-        public List<string> order_list = new List<string>() { "請選擇", "已處理", "未處理"};
+        public List<string> order_list = new List<string>() { "請選擇", "未處理", "已處理" };
 
         public void BindGrid(int idx)  //商品呈現於Grid表格中
         {
@@ -170,7 +171,8 @@ namespace WebApplication2
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
         {
             int idx = DropDownList2.SelectedIndex - 1; //取得對應的index
-            if(idx == -1)
+            Idx_2 = idx;
+            if (idx == -1)
             {
                 Response.Write("<script>alert('請選擇正確的選項')</script>");
             }
@@ -178,17 +180,24 @@ namespace WebApplication2
             {
                 BindGrid_2(idx);
             }
-            Label5.Text = idx + "";
         }
 
         protected void GridView2_RowDataBound(object sender, GridViewRowEventArgs e)
         {
             if ((e.Row.RowType == DataControlRowType.DataRow))
             {
-                HyperLink hyperLink = new HyperLink();
-                hyperLink.Text = "去處理";
-                hyperLink.NavigateUrl = $"item_overview.aspx?orderid={e.Row.Cells[0].Text}";
-                e.Row.Cells[5].Controls.Add(hyperLink);
+                if(Idx_2 == 0)
+                {
+                    HyperLink hyperLink = new HyperLink();
+                    hyperLink.Text = "去處理";
+                    hyperLink.NavigateUrl = $"item_overview.aspx?orderid={e.Row.Cells[0].Text}";
+                    e.Row.Cells[5].Controls.Add(hyperLink);
+                }
+                else
+                {
+                    return;
+                }
+                
             }
         }
     }
