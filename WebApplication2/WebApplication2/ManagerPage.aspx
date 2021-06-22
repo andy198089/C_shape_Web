@@ -28,17 +28,6 @@
         </asp:GridView>
     </div>
     <br />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <asp:Button ID="Button1" runat="server" Text="新增商品" OnClick="Button1_Click" /><asp:Button ID="Button2" runat="server" Text="更新商品" OnClick="Button2_Click" /><br />
-=======
-    <asp:Button ID="Button1" runat="server" Text="新增商品" OnClick="Button1_Click" />&nbsp;&nbsp;<asp:Button ID="Button2" runat="server" Text="更新商品" OnClick="Button2_Click" /><br />
->>>>>>> parent of f542af8 (2021/6/21 by 晉文)
-    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label><br />
-=======
-=======
->>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
     <asp:Button ID="Button1" runat="server" Text="新增商品" OnClick="Button1_Click" />&nbsp;&nbsp;<asp:Button ID="Button2" runat="server" Text="更新商品" OnClick="Button2_Click" /><br /><br />
     <asp:Label ID="Label4" runat="server" Text="訂單總覽" ForeColor="Black" Font-Size="Large"></asp:Label><br />
     <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList><br /><br />
@@ -47,8 +36,4 @@
     </div>
     <br />
     <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
-<<<<<<< HEAD
->>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
-=======
->>>>>>> parent of 21063dc (2021/06/21-22 by 陳俊元)
 </asp:Content>
