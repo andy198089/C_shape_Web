@@ -121,14 +121,14 @@ namespace WebApplication2
             SqlConnection sqlConnection2 = new SqlConnection(sql_data2);
 
             string[] buyList = buystr.Split(',');
+            DataTable dt = new DataTable();
+            dt.Columns.Add("系列");
+            dt.Columns.Add("名稱");
+            dt.Columns.Add("規格");
+            dt.Columns.Add("數量");
+            dt.Columns.Add("進度");
             foreach (var buy in buyList)
-            {
-                DataTable dt = new DataTable();
-                dt.Columns.Add("系列");
-                dt.Columns.Add("名稱");
-                dt.Columns.Add("規格");
-                dt.Columns.Add("數量");
-                dt.Columns.Add("進度");
+            {                
                 count++;
                 DataRow dr = dt.NewRow();
                 if (count % 3 == 1)
