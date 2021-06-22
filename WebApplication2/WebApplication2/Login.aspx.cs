@@ -38,19 +38,26 @@ namespace WebApplication2
                 {
                     if (sqlDataReader.Read())
                     {
-                        if (sqlDataReader["id"].ToString() == "1")
+                        if (Request.Form["password"] == sqlDataReader["password"].ToString())
                         {
-                            Session["Logined"] = "login";
-                            Session["ID"] = sqlDataReader["id"];
-                            Session["userName"] = sqlDataReader["userName"].ToString();
-                            Response.Redirect("ManagerPage.aspx");
+                            if (sqlDataReader["id"].ToString() == "1")
+                            {
+                                Session["Logined"] = "login";
+                                Session["ID"] = sqlDataReader["id"];
+                                Session["userName"] = sqlDataReader["userName"].ToString();
+                                Response.Redirect("ManagerPage.aspx");
+                            }
+                            else
+                            {
+                                Session["Logined"] = "login";
+                                Session["ID"] = sqlDataReader["id"];
+                                Session["userName"] = sqlDataReader["userName"].ToString();
+                                Response.Redirect("Home.aspx");
+                            }
                         }
                         else
                         {
-                            Session["Logined"] = "login";
-                            Session["ID"] = sqlDataReader["id"];
-                            Session["userName"] = sqlDataReader["userName"].ToString();
-                            Response.Redirect("Home.aspx");
+                            Response.Write("<script>alert('密碼輸入錯誤');</script>");
                         }
                     }
                 }
