@@ -91,7 +91,7 @@ namespace WebApplication2
 
             SqlConnection sqlConnection = new SqlConnection(sql_data);
 
-            string sqlstr_dropbox = "select * from Orders where initdate = '" + date[idx] + "'";
+            string sqlstr_dropbox = "select * from Orders where initdate = '" + date[idx] + "' and CusID = " + Session["ID"];
 
             SqlCommand sqlCommand4 = new SqlCommand(sqlstr_dropbox, sqlConnection);
 
