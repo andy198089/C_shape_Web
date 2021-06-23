@@ -89,7 +89,14 @@ namespace WebApplication2
         {
             int idx = DropDownList1.SelectedIndex - 1; //取得對應的index
             Idx = idx;
-            BindGrid(idx);
+            if(idx == -1)
+            {
+                Response.Write("<script>alert('請選擇正確的選項')</script>");
+            }
+            else
+            {
+                BindGrid(idx);
+            }
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -108,6 +115,7 @@ namespace WebApplication2
                     }
                     else
                     {
+                        Label3.Text = "";
                         e.Row.ForeColor = System.Drawing.Color.Black;
                     }
                 }
