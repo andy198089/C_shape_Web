@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ProductsConnectionString-Web.config Connection String" description="ProductsConnectionString 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Products;User ID=rootUser;Password=Abc123456" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\DCT\\Desktop\\C_shape_Web\(git\)\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ProductsConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="AcountConnectionString-Web.config Connection String" description="AcountConnectionString 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Acount;Persist Security Info=True;User ID=rootUser;Password=Abc123456" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\DCT\\Desktop\\C_shape_Web\(git\)\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AcountConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="VendorConnectionString-Web.config Connection String" description="VendorConnectionString 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Vendor;;User ID=rootUser;Password=Abc123456" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\DCT\\Desktop\\C_shape_Web\(git\)\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='VendorConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

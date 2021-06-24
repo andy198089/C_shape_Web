@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace WebApplication2
 {
     public partial class shopping_cart : System.Web.UI.Page
@@ -109,7 +110,8 @@ namespace WebApplication2
         }
 
         protected void Button2_Click(object sender, EventArgs e)
-        {
+        { 
+           
             string sql_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["AcountConnectionString"].ConnectionString;
 
             SqlConnection sqlConnection = new SqlConnection(sql_data);
@@ -181,12 +183,12 @@ namespace WebApplication2
                     sqlCommand2.Parameters["@數量"].Value = num;
 
                     sqlCommand2.ExecuteNonQuery();
-                    sqlConnection.Close();
+                    sqlConnection2.Close();
                 }
             }
             Response.Write("<script>alert('訂購完成');location.href='shopping_cart.aspx';</script>");
 
-            Session["buyorder"] = "";
+            Session["buyorder"] = "";            
         }
     }
 }

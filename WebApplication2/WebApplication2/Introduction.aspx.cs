@@ -48,7 +48,14 @@ namespace WebApplication2
             {
                 while (sqlDataReader.Read())
                 {
-                    datanames.Add(sqlDataReader["Table_name"].ToString());
+                    if (sqlDataReader["Table_name"].ToString() == "database_firewall_rules")
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        datanames.Add(sqlDataReader["Table_name"].ToString());                        
+                    }
                 }
             }
             sqlConnection.Close();

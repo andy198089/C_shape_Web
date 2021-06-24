@@ -606,3 +606,7 @@ C:\Users\user\Documents\GitHub\C_shape_Web\WebApplication2\WebApplication2\obj\D
 C:\Users\user\Documents\GitHub\C_shape_Web\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\C_shape_Web\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\user\Documents\GitHub\C_shape_Web\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\bin\EntityFramework.dll
+C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\bin\EntityFramework.SqlServer.dll
+C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\bin\EntityFramework.xml
+C:\Users\DCT\Desktop\C_shape_Web(git)\WebApplication2\WebApplication2\bin\EntityFramework.SqlServer.xml
