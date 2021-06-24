@@ -74,7 +74,7 @@ namespace WebApplication2
                 }
                 if (count % 3 == 2)
                 {
-                    string sqlstr_products = "select * from " + tableName + " where ID = " + buy;
+                    string sqlstr_products = "select * from [" + tableName + "] where ID = " + buy;
 
                     SqlCommand sqlCommand2 = new SqlCommand(sqlstr_products, sqlConnection2);
 
