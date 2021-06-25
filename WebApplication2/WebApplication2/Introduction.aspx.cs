@@ -119,6 +119,9 @@ namespace WebApplication2
                 this.RadioButtonList1.DataSource = product_list;
                 this.RadioButtonList1.DataBind();
             }
+            //隱藏購買數量
+            Label2.Visible = false;
+            TextBox1.Visible = false;
         }
         //取得RadioButtonList1的值
         protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
@@ -129,6 +132,8 @@ namespace WebApplication2
             Label8.Text = product_infs[idx].product_count.ToString();
             Session["product_id"] = product_infs[Idx].ID.ToString();
             Session["product_count"] = product_infs[idx].product_count;
+            Label2.Visible = true;
+            TextBox1.Visible = true;
         }
 
         protected void Button1_Click(object sender, EventArgs e)

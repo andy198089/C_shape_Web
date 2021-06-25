@@ -89,7 +89,7 @@ namespace WebApplication2
                 this.DropDownList2.DataSource = order_list;
                 this.DropDownList2.DataBind();
                 this.DropDownList2.Style["display"] = "none"; //將舊樣式的隱藏起來
-            }
+            }  
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
@@ -108,6 +108,9 @@ namespace WebApplication2
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
+            //初始化庫存提示
+            Label3.Text = "";
+
             DataRowView drv = (DataRowView)e.Row.DataItem;
 
             if ((e.Row.RowType == DataControlRowType.DataRow) || (e.Row.RowType == DataControlRowType.Footer))
@@ -122,7 +125,6 @@ namespace WebApplication2
                     }
                     else
                     {
-                        Label3.Text = "";
                         e.Row.ForeColor = System.Drawing.Color.Black;
                     }
                 }
