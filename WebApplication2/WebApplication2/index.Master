@@ -81,6 +81,7 @@
                                     <nav class="main-menu">
                                         <ul class="menu-area-main">
                                             <li><a href="Userpage.aspx">會員專區</a> </li>
+                                            <li><a href="shopping_cart.aspx">購物車</a> </li>
                                             <li><a href="Vendor.aspx">Vendor</a> </li>
                                             <li class="mean-last"><a href="Product.aspx">product</a> </li>
                                         </ul>
@@ -155,9 +156,7 @@
                </div>
             </div>
          </div>
-            <div class="copyright">
-               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
-            </div>
+            
       </div>
       </footr>
         <!-- end footer -->
