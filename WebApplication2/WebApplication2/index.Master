@@ -139,11 +139,10 @@
                      <h3>made of</h3>
                      <ul class="lik">
                          <li>Language：C#</li>
-                         <li>System medol：ASP.NET Web From</li>
+                         <li>System model：ASP.NET Web From</li>
                          <li><a href="https://www.free-css.com/free-css-templates/page261/lighten">Layout：Lighten</a></li>
                          <li>Client side：HTML、JavaScript、jQuery</li>
-                         <li>Server side：MS SQL (Use by SSMS)、Microsoft Azure</li>
-                         <li>UI：ASP.NET Web Control</li>
+                         <li>Server side：MS SQL、Microsoft Azure</li>
                      </ul>
                   </div>
                </div>                 
